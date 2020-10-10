@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNA Health</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="images/una-brand.svg" class="nav-brand-logo" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="">UNA Fast</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">UNA Wallet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">UNA Test</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-primary btn-nav btn-login">Login</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-primary btn-nav btn-demo">Schedule a Demo</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-info">
+            <h1>Modernizing the hiring process.</h1>
+            <p>UNA Health is transforming the way healthcare professionals manage their credentials, become “career
+                ready” and apply for available jobs using “one-click” submit technology.</p>
+            <button type="button" class="btn btn-hero-demo">SCHEDULE A DEMO</button>
+        </div>
+    </section>
+
+    <!-- Cross-Platform Section -->
+    <section id="cross-platform">
+        <div class="cross-platform-content">
+            <img src="images/icon-cross-platform.svg" class="icon-cross-platform" alt="cross-platform icon">
+            <p class="cross-platform-text">All functionality works great on any <strong class="standout-text">mobile,
+                    tablet or desktop</strong> experience.</p>
+        </div>
+
+    </section>
+
+    <!-- Intro Section -->
+    <section id="intro">
+        <div class="intro-content container">
+            <p class="intro-text">Our intuitive, engaging solution expedites the transfer of candidate data in light
+                speed, resulting in faster
+                placements. Your organization can now leverage this mobile technology to improve internal efficiency,
+                increase satisfaction among applicants and incumbents, and realize a ROI you never thought possible.
+                <br><br>
+                Your organization is unique and no one understands it better than you. UNA offers flexibility in choice
+                of
+                solutions, allowing customization to solve your complex business needs.</p>
+            <h3>UNA health provides the following services:</h3>
+        </div>
+            <div id="carouselExampleIndicators" class="container carousel slide una-slider" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/una-test-slider.svg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/fast.svg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/wallet.svg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li class="test" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li class="fast" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li class="wallet" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+    </section>
+
+    <section id="ats">
+        <div class="container ats-info">
+            <h1 class="ats-header">Wondering how UNA works with your ATS?</h1>
+            <p class="ats-p">UNA Health seamlessly integrates with your ATS through a simple API key.<br> No software to install or maintain. Boom! Done.</p>
+            <button type="button" class="btn btn-outline-primary btn-nav btn-demo btn-ats">CONTACT US FOR DETAILS</button>
+        </div>
+    </section>
+
+    <section id="learn-more">
+        <div class="learn-more-content">
+            <h2 class="learn-more-header">Want to learn more?</h2>
+            <p class="learn-more-p">Our team is ready to help answer any questions.</p>
+            <button type="button" class="btn btn-outline-primary btn-contact">CONTACT US NOW</button>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row footer-content">
+                <div class="col">
+                    <img src="images/una-brand.svg" class="footer-brand" alt="UNA brand logo">
+                </div>
+                <div class="col">
+                    <h6 class="footer-links-header">COMPANY</h6>
+                    <a href="#" class="footer-link">About Us</a>
+                    <br>
+                    <a href="#" class="footer-link">info@unahealth.co</a>
+                    <br>
+                    <a href="#" class="footer-link">866.862.4584</a>
+                </div>
+                <div class="col">
+                    <h6 class="footer-links-header">SOLUTIONS</h6>
+                    <a href="#" class="footer-link">UNA Fast</a>
+                    <br>
+                    <a href="#" class="footer-link">UNA Wallet</a>
+                    <br>
+                    <a href="#" class="footer-link">UNA Test</a>
+                </div>
+                <div class="col">
+                    <h6 class="footer-links-header">QUICK LINKS</h6>
+                    <a href="#" class="footer-link">Login</a>
+                    <br>
+                    <a href="#" class="footer-link">Schedule Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright container">
+            <p class="copyright-text">Copyright © 2020 UNA Health Inc. All rights reserved.</p>
+        </div>
+
+    </section>
+
+    <!-- Bootstrap JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
