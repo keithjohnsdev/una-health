@@ -62,7 +62,7 @@ nav .navbar-nav li a:hover {
     height: 720px;
     margin-top: 50px;
     padding-top: 40px;
-    background-image: url(images/woman-smiling-cutout.svg);
+    background-image: url(images/woman-smiling-cutout-crop.svg);
     background-position: right bottom;
     background-repeat: no-repeat;
     background-color: #F2F2F2;
@@ -371,4 +371,117 @@ nav .navbar-nav li a:hover {
     line-height: 21px;
     letter-spacing: 0em;
     text-align: center;
+}
+
+/* Media Query Breakpoints */
+
+@media (min-width: 0px) {
+    #hero {
+        background-image: linear-gradient(to left, #f2f2f2b9, #f2f2f2b9),url(images/woman-smiling-cutout-crop.svg);
+        height: 730px;
+        background-position: 110% bottom;
+        background-size: 400px
+    }
+
+    .hero-info {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    #hero h1 {
+        font-size: 45px;
+    }
+    
+    #hero p {
+        font-size: 20px;
+        line-height: 130%;
+        margin: 30px 0;
+    }
+
+    .icon-cross-platform {
+        display: none;
+    }
+    
+    .cross-platform-text {
+        padding-top: 50px;
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .standout-text {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .una-slider {
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    #hero {
+        height: 750px;
+        background-image: linear-gradient(to left, #f2f2f2b9, #f2f2f2b9),url(images/woman-smiling-cutout-crop.svg);
+        background-position: 120% bottom;
+        background-size: 550px
+
+    }
+
+    .hero-info {
+        width: 450px;
+        margin-left: 80px;
+    }
+
+    .cross-platform-text {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+    
+    .standout-text {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+}
+
+@media (min-width: 992px) {
+    #hero {
+        height: 750px;
+        background-image: url(images/woman-smiling-cutout-crop.svg);
+        background-position: right bottom;
+        background-size: 600px
+    }
+
+    .hero-info {
+        width: 450px;
+        margin-left: 70px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #hero {
+        height: 720px;
+        background-position: right bottom;
+        background-size: auto;
+        background-size: 650px;
+    }
+    
+    .hero-info {
+        width: 547px;
+        margin-left: 120px;
+    }
+}
+
+@media (min-width: 1440px) {
+    #hero {
+        height: 720px;
+        background-position: 90% bottom;
+        background-size: auto;
+        background-size: 650px;
+    }
+    
+    .hero-info {
+        width: 547px;
+        margin-left: 10%;
+    }
 }
