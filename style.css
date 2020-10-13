@@ -272,6 +272,7 @@ nav .navbar-nav li a:hover {
 #learn-more {
     height: 640px;
     background-color: #E84C60;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #E84C60;
     background-image: url(images/nurse-pointing-2.png);
     background-repeat: no-repeat;
     background-position: 20% 100%;
@@ -339,6 +340,10 @@ nav .navbar-nav li a:hover {
     width: 90.5px;
 }
 
+.footer-links {
+    margin-bottom: 20px;
+}
+
 .footer-links-header {
     font-size: 16px;
     font-style: normal;
@@ -375,9 +380,10 @@ nav .navbar-nav li a:hover {
 
 /* Media Query Breakpoints */
 
+
 @media (min-width: 0px) {
     #hero {
-        background-image: linear-gradient(to left, #f2f2f2b9, #f2f2f2b9),url(images/woman-smiling-cutout-crop.svg);
+        background-image: linear-gradient(to left, #f2f2f2b9, #f2f2f2b9), url(images/woman-smiling-cutout-crop.svg);
         height: 730px;
         background-position: 110% bottom;
         background-size: 400px
@@ -390,42 +396,141 @@ nav .navbar-nav li a:hover {
 
     #hero h1 {
         font-size: 45px;
+        margin: 0 0;
     }
-    
+
     #hero p {
         font-size: 20px;
         line-height: 130%;
         margin: 30px 0;
     }
 
-    .icon-cross-platform {
-        display: none;
+    #cross-platform {
+        height: 105px;
     }
-    
+
+    .cross-icon-div {
+        margin: 0;
+    }
+
+    .icon-cross-platform {
+        margin: 15px 0 5px;
+    }
+
     .cross-platform-text {
-        padding-top: 50px;
-        font-size: 14px;
+        font-size: 10px;
         line-height: normal;
+        padding: 0 0;
+        margin: 0;
     }
 
     .standout-text {
-        font-size: 14px;
+        font-size: 10px;
         line-height: normal;
+    }
+
+    #intro {
+        margin: 40px 0;
+    }
+
+    .intro-text {
+        font-size: 18px;
+        text-align: center;
+        margin: 0px 25px 60px;
+    }
+
+    #intro h3 {
+        font-size: 32px;
+        text-align: center;
+        margin: 0 30px 50px;
     }
 
     .una-slider {
         width: auto;
         text-align: center;
     }
+
+    .carousel-control-prev-icon {
+        margin-top: -50px;
+        margin-left: 15px;
+    }
+
+    .carousel-control-next-icon {
+        margin-top: -50px;
+        margin-right: 15px;
+    }
+
+    #ats {
+        margin: -400px 0 0;
+        height: 1000px;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 10%, #ffffff 55%), url(images/puzzle-background.png);
+        text-align: center;
+    }
+
+    .ats-header {
+        margin: 600px 10px 40px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .ats-p {
+        margin: 0 20px 0;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #learn-more {
+        height: 550px;
+        background-position: 35% 100%;
+        background-size: 800px;
+        text-align: center;
+    }
+
+    .learn-more-content {
+        position: static;
+        margin: 0 0 0;
+        text-align: center;
+    }
+
+    .learn-more-header {
+        font-size: 35px;
+        padding: 40px 0 0;
+        text-align: center;
+    }
+
+    .learn-more-p {
+        margin: 24px 10px 0;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #footer {
+        height: 600px;
+        margin-top: 60px;
+        background-size: contain;
+    }
+
+    .copyright-text {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 500px) {
+    .cross-platform-text {
+        font-size: 12px;
+    }
+
+    .standout-text {
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 768px) {
     #hero {
         height: 750px;
-        background-image: linear-gradient(to left, #f2f2f2b9, #f2f2f2b9),url(images/woman-smiling-cutout-crop.svg);
+        background-image: linear-gradient(to left, #f2f2f2b9, #f2f2f2b9), url(images/woman-smiling-cutout-crop.svg);
         background-position: 120% bottom;
         background-size: 550px
-
     }
 
     .hero-info {
@@ -433,14 +538,91 @@ nav .navbar-nav li a:hover {
         margin-left: 80px;
     }
 
+    .cross-icon-div {
+        float: left;
+        margin: 12px 0 0;
+    }
+
     .cross-platform-text {
         font-size: 18px;
-        line-height: 21.6px;
+        line-height: 105px;
     }
-    
+
     .standout-text {
         font-size: 18px;
         line-height: 21.6px;
+    }
+
+    #intro {
+        margin: 90px 0;
+    }
+
+    .intro-text {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: left;
+        margin: 60px 50px;
+    }
+
+    #intro h3 {
+        font-size: 36px;
+        text-align: left;
+        margin: 0 50px 60px;
+    }
+
+    .carousel-control-prev-icon {
+        margin-top: -80px;
+        margin-left: 15px;
+    }
+
+    .carousel-control-next-icon {
+        margin-top: -80px;
+        margin-right: 15px;
+    }
+
+    #ats {
+        margin: -320px 0 0;
+        height: 1000px;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 20%, #ffffff 58%), url(images/puzzle-background.png);
+    }
+
+    .ats-header {
+        margin: 600px 50px 30px;
+        font-size: 48px;
+        text-align: left;
+    }
+
+    .ats-p {
+        margin: 0 50px 0;
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .ats-info {
+        text-align: left;
+    }
+
+    #learn-more {
+        height: 640px;
+        background-position: 20% 100%;
+        background-size: 983px;
+    }
+
+    .learn-more-content {
+        position: absolute;
+        right: 20px;
+        margin: 20px 0 0;
+    }
+
+    .learn-more-header {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .learn-more-p {
+        margin: 24px 0 0;
+        font-size: 22px;
+        text-align: center;
     }
 }
 
@@ -456,6 +638,62 @@ nav .navbar-nav li a:hover {
         width: 450px;
         margin-left: 70px;
     }
+
+    .cross-icon-div {
+        margin-left: 120px;
+    }
+
+    .cross-text-div {
+        margin-right: 90px;
+    }
+
+    #intro h3 {
+        margin: 0 50px 90px;
+    }
+
+    .carousel-control-prev-icon {
+        margin-top: -110px;
+        margin-left: 0;
+    }
+
+    .carousel-control-next-icon {
+        margin-top: -110px;
+        margin-right: 0;
+    }
+
+    #ats {
+        margin: -300px 0 0;
+        height: 1050px;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 20%, #ffffff 63%), url(images/puzzle-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #learn-more {
+        height: 640px;
+        text-align: left;
+    }
+
+    .learn-more-content {
+        position: absolute;
+        right: 80px;
+        margin: 60px 0 0;
+        text-align: left;
+    }
+
+    .learn-more-header {
+        font-size: 48px;
+        text-align: left;
+    }
+
+    .learn-more-p {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .copyright-text {
+        margin-top: 80px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -465,10 +703,44 @@ nav .navbar-nav li a:hover {
         background-size: auto;
         background-size: 650px;
     }
-    
+
     .hero-info {
         width: 547px;
         margin-left: 120px;
+    }
+
+    .cross-icon-div {
+        margin-left: 220px;
+    }
+
+    .cross-text-div {
+        margin-right: 180px;
+    }
+
+    #ats {
+        margin: -200px 0 0;
+        height: 1050px;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 30%, #ffffff 63%), url(images/puzzle-background.png);
+        background-position: bottom;
+    }
+
+    #learn-more {
+        background-position: 35% 100%;
+    }
+
+    .learn-more-content {
+        position: absolute;
+        right: 10%;
+        margin: 100px 0 0;
+    }
+
+    #footer {
+        height: 900px;
+        margin-top: 80px;
+    }
+    
+    .copyright-text {
+        margin-top: 159px;
     }
 }
 
@@ -479,9 +751,48 @@ nav .navbar-nav li a:hover {
         background-size: auto;
         background-size: 650px;
     }
-    
+
     .hero-info {
         width: 547px;
         margin-left: 10%;
+    }
+
+    #learn-more {
+        background-position: 40% 100%;
+    }
+
+    .learn-more-content {
+        position: absolute;
+        right: 15%;
+        margin: 100px 0 0;
+    }
+}
+
+
+@media (min-width: 1700px) {
+    #hero {
+        background-position: 80% bottom;
+    }
+
+    .hero-info {
+        margin-left: 20%;
+    }
+
+    #ats {
+        margin: -200px 0 0;
+        height: 1050px;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 20%, #ffffff 70%), url(images/puzzle-background.png);
+        background-position: bottom;
+    }
+
+    .learn-more-content {
+        position: absolute;
+        right: 20%;
+        margin: 100px 0 0;
+    }
+
+    #footer {
+        height: 1000px;
+        margin-top: 80px;
     }
 }
