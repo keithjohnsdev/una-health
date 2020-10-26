@@ -1,6 +1,16 @@
+html,
 body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     font-family: 'Lato', sans-serif;
     background-color: white;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 56px;
 }
 
 a {
@@ -14,30 +24,100 @@ a:hover {
 
 nav {
     background-color: #f2f2f2;
+    transition: 0.7s;
 }
 
-nav .navbar-nav li a {
+nav.transparent {
+    background: transparent !important;
+    transition: 0.7s;
+}
+
+nav ul li a {
     color: #1A1A1A !important;
+    margin-top: 5px;
+    transition: 0.7s;
 }
 
-nav .navbar-nav li a:hover {
+nav ul li a:hover {
     color: rgb(26, 26, 26, 0.7) !important;
+    transition: 0.2s;
+}
+
+nav.transparent .navbar-nav li a {
+    color: white !important;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+/* nav.transparent .navbar-nav li a:hover {
+    color: rgb(26, 26, 26, 0.7) !important;
+    transition: 0s;
+} */
+
+.nav-brand-logo {
+    margin-top: -7px;
+    transition: 0.7s;
+}
+
+.nav-brand-logo-red {
+    margin-top: -7px;
+    visibility: visible;
+    transition: 0.7s;
+}
+
+nav.transparent .nav-brand-logo-red {
+    visibility: hidden;
+    transition: 0.7s;
+}
+
+nav.transparent .nav-brand-logo-white {
+    position: fixed;
+    left: 16px;
+    top: 21px;
+    visibility: visible;
+    transition: 0.7s;
+}
+
+.nav-brand-logo-white {
+    visibility: hidden;
 }
 
 .nav-item {
-    margin: 0 12px;
+    margin: 0px 10px 0px;
+}
+
+nav.transparent .btn-nav {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: 0.7s;
+}
+
+nav.transparent .btn-nav:hover {
+    background: white;
+    color: rgba(36, 164, 219, 1) !important;
+    transition: 0.2s;
 }
 
 .btn-nav {
     box-sizing: border-box;
     border-radius: 8px;
     padding: 7px 16px 8px;
+    transition: 0.7s;
 }
 
 .btn-login {
     border: 1px solid #008489;
     background: #F2F2F2;
     color: #008489;
+}
+
+a.btn-login {
+    color: #008489 !important;
+}
+
+a.btn-login:hover {
+    color: #F2F2F2 !important;
 }
 
 .btn-login:hover {
@@ -58,11 +138,41 @@ nav .navbar-nav li a:hover {
     border: 1px solid #E84C60;
 }
 
+a.btn-demo {
+    color: #E84C60 !important;
+}
+
+a.btn-demo:hover {
+    color: #F2F2F2 !important;
+}
+
+.collapse .btn-nav {
+    margin: 5px 0 5px;
+}
+
+nav.transparent button span {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+/* .navbar-collapse {
+    transition: 0.2s;
+} */
+
+nav.transparent .navbar-collapse.test .navbar-nav {
+    background: rgba(36, 164, 219, 0.95);
+    transition: 3s;
+}
+
+nav.transparent .navbar-collapse.fast .navbar-nav {
+    background: rgba(147, 77, 190, 0.95);
+    transition: 3s;
+}
+
 #hero {
     height: 720px;
     margin-top: 50px;
     padding-top: 40px;
-    background-image: url(images/woman-smiling-cutout-crop.svg);
+    background-image: url(images/img-nurse-hero.png);
     background-position: right bottom;
     background-repeat: no-repeat;
     background-color: #F2F2F2;
@@ -106,6 +216,7 @@ nav .navbar-nav li a:hover {
     height: 90px;
     z-index: 100;
     box-shadow: 0px 8px 7px 0px rgb(236, 236, 236);
+    overflow: auto;
 }
 
 .icon-cross-platform {
@@ -378,15 +489,176 @@ nav .navbar-nav li a:hover {
     text-align: center;
 }
 
+
+
+/* ------------------------ Una Test Page CSS ------------------------ */
+
+#test-hero {
+    padding-top: 100px;
+    background-color: rgba(36, 164, 219, 1);
+    background-image: url(images/testing-hero-img.png);
+    background-size: 850px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    height: 792px;
+}
+
+.test-hero-info {
+    width: 547px;
+    margin-left: 120px;
+    color: #FFFFFF;
+    padding-top: 96px;
+}
+
+.una-test-icon {
+    width: 152.7px;
+    margin-bottom: 51px;
+}
+
+#test-hero h1 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 100%;
+    margin-bottom: 33px;
+}
+
+#test-hero p {
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 300;
+}
+
+.col-sm-6 {
+    padding: 0;
+}
+
+.grid-info {
+    padding-left: 120px;
+    padding-top: 90px;
+    padding-right: 75px;
+    width: 495px;
+    max-height: 620px;
+}
+
+#comp-testing h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 30px;
+}
+
+#comp-testing li::marker {
+    color: rgba(36, 164, 219, 1);
+}
+
+.bullet {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.validated {
+    text-decoration-line: underline;
+    color: #E84C60;
+}
+
+.single-col-img {
+    display: none;
+}
+
+#covid-bar {
+    height: 120px;
+    background: rgba(28, 26, 27, 1);
+    background-image: url(images/coronavirus.png);
+    background-repeat: no-repeat;
+    background-size: 510px;
+}
+
+.covid-text {
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 120px;
+    margin-left: 480px;
+}
+
+.covid-19 {
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
+#test-learn-more {
+    height: 446px;
+    background: rgba(36, 164, 219, 1);
+    background-image: url(images/icon-test-learn-more.png);
+    background-size: 520px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.test-learn-more-content {
+    margin-left: 100px;
+}
+
+.test-learn {
+    background: rgba(36, 164, 219, 1);
+    margin-top: 49px;
+}
+
+.test-learn:hover {
+    color: rgba(36, 164, 219, 1);
+}
+
+#test-learn-more h1 {
+    padding-top: 120px;
+    color: white;
+}
+
+/* ------------------------ Una Fast Page CSS ------------------------ */
+
+.fast-hero {
+    background-color: rgba(147, 77, 190, 1) !important;
+    background-image: url(images/nurse-tablet.png) !important;
+    background-size: 927px;
+    background-position: right bottom;
+}
+
+h2.fast {
+    font-weight: 700 !important;
+    line-height: 46px !important;
+    text-align: left !important;
+    padding-left: 0 !important;
+}
+
+#test-learn-more.fast {
+    background-color: rgba(147, 77, 190, 1) !important;
+    background-image: url(images/fast-learn-more-icon.png);
+}
+
+.fast-learn {
+    background: rgba(147, 77, 190, 1);
+    margin-top: 49px;
+}
+
+.fast-learn:hover {
+    color: rgba(147, 77, 190, 1);
+}
+
 /* Media Query Breakpoints */
 
-
 @media (min-width: 0px) {
+    nav.transparent .nav-brand-logo-white {
+        left: 15.75px;
+        top: 15px;
+    }
+
     #hero {
-        background-image: linear-gradient(to left, #f2f2f2b9, #f2f2f2b9), url(images/woman-smiling-cutout-crop.svg);
-        height: 730px;
-        background-position: 110% bottom;
-        background-size: 400px
+        background-image: linear-gradient(to left, #f2f2f2b9, #f2f2f2b9), url(images/img-nurse-hero.png);
+        height: 810px;
+        background-position: right -35px bottom;
+        background-size: 380px
     }
 
     .hero-info {
@@ -402,11 +674,11 @@ nav .navbar-nav li a:hover {
     #hero p {
         font-size: 20px;
         line-height: 130%;
-        margin: 30px 0;
+        margin: 20px 0;
     }
 
     #cross-platform {
-        height: 105px;
+        height: 120px;
     }
 
     .cross-icon-div {
@@ -462,8 +734,9 @@ nav .navbar-nav li a:hover {
 
     #ats {
         margin: -400px 0 0;
-        height: 1000px;
-        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 10%, #ffffff 55%), url(images/puzzle-background.png);
+        height: 1200px;
+        background-size: cover;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 65%), url(images/puzzle-background.png);
         text-align: center;
     }
 
@@ -513,9 +786,193 @@ nav .navbar-nav li a:hover {
     .copyright-text {
         margin-top: 50px;
     }
+
+    /* -------------------------- UNA Test Page --------------------------- */
+
+    #test-hero {
+        background-image: linear-gradient(to left, rgba(36, 164, 219, 0.3), rgba(36, 164, 219, 0.3)), url(images/testing-hero-img.png);
+        background-position: right -50px bottom;
+        background-size: 400px;
+        margin: auto;
+        padding-top: 0px;
+        height: 680px;
+    }
+
+    .test-hero-info {
+        margin: auto;
+        width: 300px;
+        text-align: center;
+    }
+
+    .una-test-icon {
+        width: 152.7px;
+        margin-bottom: 30px;
+    }
+
+    #test-hero h1 {
+        font-size: 30px;
+    }
+
+    #test-hero p {
+        font-size: 14px;
+    }
+
+    .grid-info {
+        padding: 15px;
+    }
+
+    #comp-testing h2 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 46px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .bullet {
+        margin-bottom: 5px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .single-col-img {
+        display: inline-block;
+    }
+
+    .two-col-img {
+        display: none;
+    }
+
+    #covid-bar {
+        background-image: linear-gradient(to left, rgba(28, 26, 27, 0.7), rgba(28, 26, 27, 0.7)), url(images/coronavirus.png);
+        background-position: -80px;
+    }
+
+    .covid-text {
+        font-size: 16px;
+        margin: auto;
+        line-height: 40px;
+        padding-top: 18px;
+    }
+
+    .test-learn-more-content {
+        margin-left: 0px;
+    }
+
+    #test-learn-more {
+        height: 350px;
+        background-size: 420px;
+    }
+
+    .test-learn {
+        margin-top: 30px;
+    }
+
+    #test-learn-more h1 {
+        padding: 80px 3% 0;
+        font-size: 30px;
+    }
+
+    /* -------------------------- UNA Fast Page --------------------------- */
+
+    .fast-hero {
+        background-image: linear-gradient(to left, rgba(147, 77, 190, 0.3), rgba(147, 77, 190, 0.3)), url(images/nurse-tablet.png) !important;
+        background-size: 450px !important;
+        background-position: center 30px bottom !important;
+        height: 630px !important;
+    }
+
+    .grid-info.fast {
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    .grid-info.fast h2 {
+        text-align: center !important;
+        font-size: 24px;
+        line-height: 30px !important;
+    }
+
+    .grid-info.fast h3 {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
 }
 
-@media (min-width: 500px) {
+@media (min-width: 350px) {
+
+    #hero {
+        height: 790px;
+        background-position: right -30px bottom;
+        background-size: 400px
+    }
+
+    #cross-platform {
+        height: 105px;
+    }
+
+    #test-hero {
+        background-position: center bottom;
+        background-size: 400px;
+        margin: auto;
+        padding-top: 0px;
+        height: 680px;
+    }
+
+    .test-hero-info {
+        margin: auto;
+        width: 340px;
+        text-align: center;
+    }
+
+    .una-test-icon {
+        width: 152.7px;
+        margin-bottom: 30px;
+    }
+
+    #test-hero h1 {
+        font-size: 30px;
+    }
+
+    #test-hero p {
+        font-size: 14px;
+    }
+
+    .grid-info {
+        margin: auto;
+    }
+
+    #covid-bar {
+        background-image: linear-gradient(to left, rgba(28, 26, 27, 0.7), rgba(28, 26, 27, 0.7)), url(images/coronavirus.png);
+        background-position: -60px;
+    }
+
+    .covid-text {
+        font-size: 18px;
+        margin: auto 10px;
+        line-height: 40px;
+        padding-top: 18px;
+    }
+
+    #test-learn-more h1 {
+        padding: 80px 3% 0;
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 575px) {
+
+    #hero {
+        height: 730px;
+        background-position: right bottom;
+        background-size: 450px
+    }
+
+    #cross-platform {
+        height: 105px;
+    }
+
     .cross-platform-text {
         font-size: 12px;
     }
@@ -523,13 +980,119 @@ nav .navbar-nav li a:hover {
     .standout-text {
         font-size: 12px;
     }
+
+    /* -------------------------- UNA Test Page --------------------------- */
+
+    #test-hero {
+        padding-top: 0px;
+        height: 770px;
+        background-position: center bottom;
+        background-size: 450px
+    }
+
+    .test-hero-info {
+        margin: auto;
+        width: 470px;
+    }
+
+    .una-test-icon {
+        width: 152.7px;
+        margin-bottom: 30px;
+    }
+
+    #test-hero h1 {
+        font-size: 40px;
+    }
+
+    #test-hero p {
+        font-size: 18px;
+    }
+
+    .grid-info {
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-right: 15px;
+    }
+
+    #comp-testing h2 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 46px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .bullet {
+        margin-bottom: 5px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .single-col-img {
+        display: none;
+    }
+
+    .two-col-img {
+        display: inline-block;
+    }
+
+    #covid-bar {
+        background-image: linear-gradient(to left, rgba(28, 26, 27, 0.7), rgba(28, 26, 27, 0.7)), url(images/coronavirus.png);
+    }
+
+    .covid-text {
+        font-size: 19px;
+        margin: auto;
+        line-height: 120px;
+        padding-top: 0;
+    }
+
+    #test-learn-more {
+        height: 400px;
+        background-size: 500px;
+    }
+
+    .test-learn {
+        margin-top: 35px;
+    }
+
+    #test-learn-more h1 {
+        padding: 80px 3% 0;
+        font-size: 48px;
+    }
+
+    /* -------------------------- UNA Fast Page --------------------------- */
+
+    .fast-hero {
+        padding-top: 0px !important;
+        background-image: linear-gradient(to left, rgba(147, 77, 190, 0.3), rgba(147, 77, 190, 0.3)), url(images/nurse-tablet.png) !important;
+        background-size: 550px !important;
+        background-position: 20% bottom !important;
+        height: 730px !important;
+    }
+
+    .grid-info.fast {
+        text-align: left;
+        padding: auto;
+    }
+
+    .grid-info.fast h2 {
+        text-align: left !important;
+        font-size: 24px;
+        line-height: 30px !important;
+    }
+
+    .grid-info.fast h3 {
+        font-size: 16px;
+        padding-top: 10px;
+    }
 }
 
 @media (min-width: 768px) {
     #hero {
         height: 750px;
-        background-image: linear-gradient(to left, #f2f2f2b9, #f2f2f2b9), url(images/woman-smiling-cutout-crop.svg);
-        background-position: 120% bottom;
+        background-image: linear-gradient(to left, #f2f2f2b9, #f2f2f2b9), url(images/img-nurse-hero.png);
+        background-position: right bottom;
         background-size: 550px
     }
 
@@ -582,8 +1145,9 @@ nav .navbar-nav li a:hover {
 
     #ats {
         margin: -320px 0 0;
-        height: 1000px;
-        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 20%, #ffffff 58%), url(images/puzzle-background.png);
+        height: 1300px;
+        background-size: cover;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 68%), url(images/puzzle-background.png);
     }
 
     .ats-header {
@@ -624,14 +1188,129 @@ nav .navbar-nav li a:hover {
         font-size: 22px;
         text-align: center;
     }
+
+    /* -------------------------- UNA Test Page --------------------------- */
+
+    #test-hero {
+        padding-top: 20px;
+        height: 750px;
+        background-position: 110% bottom;
+        background-size: 550px
+    }
+
+    .test-hero-info {
+        margin-left: 50px;
+        width: 400px;
+        text-align: left;
+    }
+
+    .una-test-icon {
+        width: 152.7px;
+        margin-bottom: 45px;
+    }
+
+    #test-hero h1 {
+        font-size: 40px;
+    }
+
+    #test-hero p {
+        font-size: 18px;
+    }
+
+    .grid-info {
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    #comp-testing h2 {
+        font-size: 24px;
+        line-height: 46px;
+        margin-bottom: 15px;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .bullet {
+        margin-bottom: 18px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    #covid-bar {
+        background-image: url(images/coronavirus.png);
+        background-position: -150px;
+    }
+
+    .covid-text {
+        font-size: 20px;
+        margin-left: 35%;
+        line-height: 40px;
+        width: 500px;
+        padding-top: 15px;
+    }
+
+    #test-learn-more {
+        height: 446px;
+        background: rgba(36, 164, 219, 1);
+        background-image: url(images/icon-test-learn-more.png);
+        background-size: 520px;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+    .test-learn-more-content {
+        margin-left: 100px;
+    }
+
+    .test-learn {
+        background: rgba(36, 164, 219, 1);
+        margin-top: 49px;
+    }
+
+    #test-learn-more h1 {
+        padding-top: 120px;
+    }
+
+    /* -------------------------- UNA Fast Page --------------------------- */
+
+    .fast-hero {
+        padding-top: 20px !important;
+        background-image: linear-gradient(to left, rgba(147, 77, 190, 0.3), rgba(147, 77, 190, 0.3)), url(images/nurse-tablet.png) !important;
+        background-size: 700px !important;
+        background-position: 110% bottom !important;
+        height: 750px !important;
+    }
+
+    .grid-info.fast {
+        padding-left: 50px !important;
+        padding-top: 0px !important;
+    }
+
+    .grid-info.fast h2 {
+        text-align: left !important;
+        font-size: 28px;
+        line-height: 30px !important;
+    }
+
+    .grid-info.fast h3 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
 }
 
 @media (min-width: 992px) {
+    nav.transparent .nav-brand-logo-white {
+        left: 16px;
+        top: 21px;
+    }
+
     #hero {
         height: 750px;
-        background-image: url(images/woman-smiling-cutout-crop.svg);
-        background-position: right bottom;
-        background-size: 600px
+        background-image: url(images/img-nurse-hero.png);
+        background-position: right -20px bottom;
+        background-size: 670px
     }
 
     .hero-info {
@@ -663,8 +1342,8 @@ nav .navbar-nav li a:hover {
 
     #ats {
         margin: -300px 0 0;
-        height: 1050px;
-        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 20%, #ffffff 63%), url(images/puzzle-background.png);
+        height: 1550px;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 10%, #ffffff 75%), url(images/puzzle-background.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -694,14 +1373,104 @@ nav .navbar-nav li a:hover {
     .copyright-text {
         margin-top: 80px;
     }
+
+    /* -------------------------- UNA Test Page --------------------------- */
+
+    #test-hero {
+        padding-top: 60px;
+        background-image: url(images/testing-hero-img.png);
+        background-size: 700px;
+        background-position: right -100px bottom;
+    }
+
+    .test-hero-info {
+        margin-left: 80px;
+        width: 547px;
+    }
+
+    .una-test-icon {
+        width: 152.7px;
+        margin-bottom: 51px;
+    }
+
+    #test-hero h1 {
+        font-size: 50px;
+    }
+
+    #test-hero p {
+        font-size: 24px;
+    }
+
+    .grid-info {
+        padding-left: 35px;
+        padding-top: 25px;
+        padding-right: 20px;
+    }
+
+    #comp-testing h2 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 46px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .bullet {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    #covid-bar {
+        background-image: url(images/coronavirus.png);
+        background-position: -150px;
+    }
+
+    .covid-text {
+        font-size: 20px;
+        margin-left: 35%;
+        line-height: 120px;
+        width: 600px;
+        padding-top: 0;
+    }
+
+    .test-learn-more-content {
+        margin-left: 100px;
+    }
+
+    /* -------------------------- UNA Fast Page --------------------------- */
+
+    .fast-hero {
+        padding-top: 60px !important;
+        background-image: url(images/nurse-tablet.png) !important;
+        background-size: 800px !important;
+        background-position: 110% bottom !important;
+        height: 750px !important;
+    }
+
+    .grid-info.fast {
+        padding-left: 60px !important;
+        padding-top: 0px !important;
+    }
+
+    .grid-info.fast h2 {
+        text-align: left !important;
+        font-size: 32px;
+        line-height: 40px !important;
+    }
+
+    .grid-info.fast h3 {
+        font-size: 24px;
+        padding-top: 24px;
+    }
 }
 
 @media (min-width: 1200px) {
     #hero {
         height: 720px;
-        background-position: right bottom;
+        background-position: right -30px bottom;
         background-size: auto;
-        background-size: 650px;
+        background-size: 720px;
     }
 
     .hero-info {
@@ -719,8 +1488,8 @@ nav .navbar-nav li a:hover {
 
     #ats {
         margin: -200px 0 0;
-        height: 1050px;
-        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 30%, #ffffff 63%), url(images/puzzle-background.png);
+        height: 1550px;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 20%, #ffffff 80%), url(images/puzzle-background.png);
         background-position: bottom;
     }
 
@@ -738,18 +1507,107 @@ nav .navbar-nav li a:hover {
         height: 900px;
         margin-top: 80px;
     }
-    
+
     .copyright-text {
         margin-top: 159px;
+    }
+
+    /* -------------------------- UNA Test Page --------------------------- */
+
+    #test-hero {
+        padding-top: 60px;
+        background-size: 800px;
+        background-position: right -70px bottom;
+    }
+
+    .test-hero-info {
+        margin-left: 80px;
+    }
+
+    .una-test-icon {
+        width: 152.7px;
+        margin-bottom: 51px;
+    }
+
+    #test-hero h1 {
+        font-size: 50px;
+    }
+
+    .grid-info {
+        padding: 70px 70px 53px;
+        width: 495px;
+        max-height: 620px;
+    }
+
+    #comp-testing h2 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 30px;
+    }
+
+    #comp-testing li::marker {
+        color: rgba(36, 164, 219, 1);
+    }
+
+    .bullet {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    #covid-bar {
+        height: 120px;
+        background: rgba(28, 26, 27, 1);
+        background-image: url(images/coronavirus.png);
+        background-repeat: no-repeat;
+        background-size: 510px;
+    }
+
+    .covid-text {
+        font-size: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        line-height: 120px;
+        margin-right: 10%;
+        width: 750px;
+    }
+
+    /* -------------------------- UNA Fast Page --------------------------- */
+
+    .fast-hero {
+        padding-top: 60px !important;
+        background-size: 900px !important;
+        background-position: 110% bottom !important;
+    }
+
+    .grid-info.fast {
+        padding-left: 80px !important;
+        padding-right: 80px;
+        margin-top: 90px !important;
+    }
+
+    .grid-info.fast h2 {
+        text-align: left !important;
+        font-size: 36px;
+        line-height: 46px !important;
+        padding-right: 70px;
+    }
+
+    .grid-info.fast h3 {
+        font-size: 24px;
+        padding-top: 24px;
+        line-height: 150%;
+        margin: auto;
     }
 }
 
 @media (min-width: 1440px) {
     #hero {
         height: 720px;
-        background-position: 90% bottom;
+        background-position: right bottom;
         background-size: auto;
-        background-size: 650px;
+        background-size: 800px;
     }
 
     .hero-info {
@@ -766,22 +1624,71 @@ nav .navbar-nav li a:hover {
         right: 15%;
         margin: 100px 0 0;
     }
-}
 
+    /* -------------------------- UNA Test Page --------------------------- */
+
+    #test-hero {
+        padding-top: 60px;
+        background-size: 800px;
+        background-position: right bottom;
+    }
+
+    .test-hero-info {
+        margin-left: 10%;
+    }
+
+    .una-test-icon {
+        width: 152.7px;
+        margin-bottom: 51px;
+    }
+
+    #test-hero h1 {
+        font-size: 50px;
+    }
+
+    /* -------------------------- UNA Fast Page --------------------------- */
+
+    .fast-hero {
+        padding-top: 60px !important;
+        background-size: 900px !important;
+        background-position: 85% bottom !important;
+    }
+
+    .grid-info.fast {
+        padding-left: 120px !important;
+        padding-right: 105px;
+        margin-top: 90px !important;
+    }
+
+    .grid-info.fast h2 {
+        text-align: left !important;
+        font-size: 36px;
+        line-height: 46px !important;
+        padding-right: 70px;
+    }
+
+    .grid-info.fast h3 {
+        font-size: 24px;
+        padding-top: 30px;
+        line-height: 150%;
+        margin: auto;
+    }
+}
 
 @media (min-width: 1700px) {
     #hero {
-        background-position: 80% bottom;
+        background-position: 85% bottom;
     }
 
     .hero-info {
-        margin-left: 20%;
+        margin-left: 15%;
     }
 
     #ats {
         margin: -200px 0 0;
-        height: 1050px;
-        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 20%, #ffffff 70%), url(images/puzzle-background.png);
+        height: 1850px;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 20%, #ffffff 85%), url(images/puzzle-background.png);
+        background-size: cover;
         background-position: bottom;
     }
 
@@ -794,5 +1701,26 @@ nav .navbar-nav li a:hover {
     #footer {
         height: 1000px;
         margin-top: 80px;
+    }
+
+    /* -------------------------- UNA Test Page --------------------------- */
+
+    #test-hero {
+        padding-top: 60px;
+        background-size: 850px;
+        background-position: 85% bottom;
+    }
+
+    .test-hero-info {
+        margin-left: 15%;
+    }
+
+    .una-test-icon {
+        width: 152.7px;
+        margin-bottom: 51px;
+    }
+
+    #test-hero h1 {
+        font-size: 50px;
     }
 }
