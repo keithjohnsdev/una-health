@@ -24,50 +24,55 @@ a:hover {
 
 nav {
     background-color: #f2f2f2;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
-nav.transparent {
-    background: transparent !important;
-    transition: 0.7s;
+nav.transparent.test {
+    background: rgba(36, 164, 219, 0.95) !important;
+    transition: 0.5s;
+}
+
+nav.transparent.fast {
+    background: rgba(147, 77, 190, 0.95) !important;
+    transition: 0.5s;
 }
 
 nav ul li a {
     color: #1A1A1A !important;
     margin-top: 5px;
-    transition: 0.7s;
-}
-
-nav ul li a:hover {
-    color: rgb(26, 26, 26, 0.7) !important;
-    transition: 0.2s;
-}
-
-nav.transparent .navbar-nav li a {
-    color: white !important;
-    margin-top: 5px;
     transition: 0.5s;
 }
 
-/* nav.transparent .navbar-nav li a:hover {
-    color: rgb(26, 26, 26, 0.7) !important;
+nav ul li a:hover {
+    color: rgb(26, 26, 26, 0.6) !important;
     transition: 0s;
-} */
+}
+
+nav.transparent .navbar-nav li a {
+    color: rgba(255, 255, 255, 0.85) !important;
+    margin-top: 5px;
+    /* transition: 0.5s; */
+}
+
+nav.transparent .navbar-nav li a:hover {
+    color: white !important;
+    transition: 0s;
+}
 
 .nav-brand-logo {
     margin-top: -7px;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 .nav-brand-logo-red {
     margin-top: -7px;
     visibility: visible;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 nav.transparent .nav-brand-logo-red {
     visibility: hidden;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 nav.transparent .nav-brand-logo-white {
@@ -75,7 +80,7 @@ nav.transparent .nav-brand-logo-white {
     left: 16px;
     top: 21px;
     visibility: visible;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 .nav-brand-logo-white {
@@ -90,7 +95,7 @@ nav.transparent .btn-nav {
     background: transparent;
     color: white;
     border: 1px solid white;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 nav.transparent .btn-nav:hover {
@@ -107,7 +112,7 @@ nav.transparent .btn-nav.fast:hover {
     box-sizing: border-box;
     border-radius: 8px;
     padding: 7px 16px 8px;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 .btn-login {
@@ -162,15 +167,15 @@ nav.transparent button span {
     transition: 0.2s;
 } */
 
-nav.transparent .navbar-collapse.test .navbar-nav {
+/* nav.transparent .navbar-collapse.test .navbar-nav {
     background: rgba(36, 164, 219, 0.95);
-    transition: 3s;
-}
+    transition: 2s;
+} */
 
-nav.transparent .navbar-collapse.fast .navbar-nav {
+/* nav.transparent .navbar-collapse.fast .navbar-nav {
     background: rgba(147, 77, 190, 0.95);
     transition: 3s;
-}
+} */
 
 #hero {
     height: 720px;
