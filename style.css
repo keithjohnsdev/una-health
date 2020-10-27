@@ -37,6 +37,11 @@ nav.transparent.fast {
     transition: 0.5s;
 }
 
+nav.transparent.wallet {
+    background: rgba(0, 132, 137, 0.95) !important;
+    transition: 0.5s;
+}
+
 nav ul li a {
     color: #1A1A1A !important;
     margin-top: 5px;
@@ -516,7 +521,7 @@ nav.transparent button span {
     width: 547px;
     margin-left: 120px;
     color: #FFFFFF;
-    padding-top: 96px;
+    padding-top: 120px;
 }
 
 .una-test-icon {
@@ -653,6 +658,86 @@ h2.fast {
 
 .fast-learn:hover {
     color: rgba(147, 77, 190, 1);
+}
+
+/* ------------------------ Una Wallet Page CSS ------------------------ */
+
+.fast-hero.wallet {
+    background-color: rgba(0, 132, 137, 1) !important;
+    background-image: url(images/img-wallet-hero.png) !important;
+    background-size: 720px !important;
+    background-position: right bottom;
+}
+
+.una-test-icon.wallet {
+    width: 188.7px;
+    margin-bottom: 51px;
+}
+
+#cred-mgmt-text h1 {
+    text-align: center;
+    padding-top: 110px;
+    font-size: 48px;
+}
+
+#cred-mgmt-text p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    padding: 36px 30px 100px;
+}
+
+#cred-mgmt-img {
+    background-color: white;
+    background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 65%, #ffffff 99%), url(images/cred-mgmt-nurse.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+#positive-outcomes h1 {
+    text-align: center;
+    padding-top: 90px;
+    font-size: 48px;
+}
+
+.outcomes-info {
+    padding-top: 60px;
+    padding-bottom: 110px;
+}
+
+.outcomes-info ul li {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.outcomes-info li::marker {
+    color: rgba(0, 132, 137, 1);
+}
+
+#positive-outcomes-img {
+    background-image: url(images/positive-outcomes-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 720px;
+}
+
+#test-learn-more.wallet {
+    background-color: rgba(0, 132, 137, 1);
+    background-image: url(images/wallet-learn-more-icon.png);
+}
+
+.wallet-learn {
+    background: rgba(0, 132, 137, 1);
+    margin-top: 49px;
+}
+
+.wallet-learn:hover {
+    color: rgba(0, 132, 137, 1);
 }
 
 /* Media Query Breakpoints */
@@ -796,6 +881,14 @@ h2.fast {
         margin-top: 50px;
     }
 
+    .brand {
+        display: none;
+    }
+
+    .footer-link {
+        font-size: 14px;
+    }
+
     /* -------------------------- UNA Test Page --------------------------- */
 
     #test-hero {
@@ -811,11 +904,12 @@ h2.fast {
         margin: auto;
         width: 300px;
         text-align: center;
+        padding-top: 90px;
     }
 
     .una-test-icon {
         width: 152.7px;
-        margin-bottom: 30px;
+        margin-bottom: 30px !important;
     }
 
     #test-hero h1 {
@@ -907,6 +1001,24 @@ h2.fast {
         padding-top: 10px;
     }
 
+    /* -------------------------- UNA Wallet Page --------------------------- */
+
+    .fast-hero.wallet {
+        background-image: linear-gradient(to left, rgba(0, 132, 137, 0.3), rgba(0, 132, 137, 0.3)), url(images/img-wallet-hero.png) !important;
+        background-size: 350px !important;
+        background-position: center bottom !important;
+        height: 630px !important;
+    }
+
+    #positive-outcomes h1 {
+        font-size: 36px;
+    }
+
+    #positive-outcomes li {
+        font-size: 18px;
+    }
+    
+
 }
 
 @media (min-width: 350px) {
@@ -988,6 +1100,10 @@ h2.fast {
 
     .standout-text {
         font-size: 12px;
+    }
+
+    .footer-link {
+        font-size: 16px;
     }
 
     /* -------------------------- UNA Test Page --------------------------- */
@@ -1094,6 +1210,15 @@ h2.fast {
     .grid-info.fast h3 {
         font-size: 16px;
         padding-top: 10px;
+    }
+
+    /* -------------------------- UNA Wallet Page --------------------------- */
+
+    .fast-hero.wallet {
+        background-image: linear-gradient(to left, rgba(0, 132, 137, 0.3), rgba(0, 132, 137, 0.3)), url(images/img-wallet-hero.png) !important;
+        background-size: 370px !important;
+        background-position: center bottom !important;
+        height: 690px !important;
     }
 }
 
@@ -1307,6 +1432,19 @@ h2.fast {
         font-size: 20px;
         padding-top: 20px;
     }
+
+    /* -------------------------- UNA Wallet Page --------------------------- */
+
+    .fast-hero.wallet {
+        background-image: linear-gradient(to left, rgba(0, 132, 137, 0.3), rgba(0, 132, 137, 0.3)), url(images/img-wallet-hero.png) !important;
+        background-size: 500px !important;
+        background-position: 110% bottom !important;
+        height: 750px !important;
+    }
+
+    #positive-outcomes h1 {
+        font-size: 48px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -1381,6 +1519,10 @@ h2.fast {
 
     .copyright-text {
         margin-top: 80px;
+    }
+
+    .brand {
+        display: initial;
     }
 
     /* -------------------------- UNA Test Page --------------------------- */
@@ -1471,6 +1613,15 @@ h2.fast {
     .grid-info.fast h3 {
         font-size: 24px;
         padding-top: 24px;
+    }
+
+    /* -------------------------- UNA Wallet Page --------------------------- */
+
+    .fast-hero.wallet {
+        background-image: url(images/img-wallet-hero.png) !important;
+        background-size: 500px !important;
+        background-position: 110% bottom !important;
+        height: 750px !important;
     }
 }
 
@@ -1609,6 +1760,13 @@ h2.fast {
         line-height: 150%;
         margin: auto;
     }
+
+    /* -------------------------- UNA Wallet Page --------------------------- */
+
+    .fast-hero.wallet {
+        background-size: 620px !important;
+        background-position: 110% bottom !important;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -1682,6 +1840,13 @@ h2.fast {
         line-height: 150%;
         margin: auto;
     }
+
+    /* -------------------------- UNA Wallet Page --------------------------- */
+
+    .fast-hero.wallet {
+        background-size: 620px !important;
+        background-position: 85% bottom !important;
+    }
 }
 
 @media (min-width: 1700px) {
@@ -1731,5 +1896,12 @@ h2.fast {
 
     #test-hero h1 {
         font-size: 50px;
+    }
+
+    /* -------------------------- UNA Wallet Page --------------------------- */
+
+    .fast-hero.wallet {
+        background-size: 650px !important;
+        background-position: 85% bottom !important;
     }
 }
