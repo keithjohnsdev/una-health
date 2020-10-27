@@ -23,7 +23,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top transparent">
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="index.html">
             <img src="images/una-brand.svg" class="nav-brand-logo-red" alt="">
             <img src="images/una-brand-white.svg" class="nav-brand-logo-white" alt="">
         </a>
@@ -49,7 +49,7 @@
                     <a class="nav-link" href="mailto: hello@unahealth.co">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a type="button" href="http://una-admin-prod.s3-website-us-east-1.amazonaws.com" class="btn btn-outline-primary btn-nav btn-login">Login</a>
+                    <button type="button" class="btn btn-outline-primary btn-nav btn-login" onclick="location.href = 'http://una-admin-prod.s3-website-us-east-1.amazonaws.com';">Login</button>
                 </li>
                 <li class="nav-item">
                     <a type="button" class="btn btn-outline-primary btn-nav btn-demo">Schedule a Demo</a>
@@ -164,11 +164,13 @@
         <div class="container">
             <div class="row footer-content">
                 <div class="col-6 col-md-3">
-                    <img src="images/una-brand.svg" class="footer-brand" alt="UNA brand logo">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/una-brand.svg" class="footer-brand" alt="UNA brand logo">
+                    </a>
                 </div>
                 <div class="col-6 col-md-3 footer-links">
                     <h6 class="footer-links-header">COMPANY</h6>
-                    <a href="/about.html" class="footer-link">About Us</a>
+                    <a href="about.html" class="footer-link">About Us</a>
                     <br>
                     <a href="mailto:hello@unahealth.co" class="footer-link">hello@unahealth.co</a>
                     <br>
@@ -176,11 +178,11 @@
                 </div>
                 <div class="col-6 col-md-3 footer-links">
                     <h6 class="footer-links-header">SOLUTIONS</h6>
-                    <a href="/una-fast.html" class="footer-link">UNA Fast</a>
+                    <a href="una-fast.html" class="footer-link">UNA Fast</a>
                     <br>
-                    <a href="/una-wallet.html" class="footer-link">UNA Wallet</a>
+                    <a href="una-wallet.html" class="footer-link">UNA Wallet</a>
                     <br>
-                    <a href="/una-test.html" class="footer-link">UNA Test</a>
+                    <a href="una-test.html" class="footer-link">UNA Test</a>
                 </div>
                 <div class="col-6 col-md-3 footer-links">
                     <h6 class="footer-links-header">QUICK LINKS</h6>
@@ -193,6 +195,8 @@
         <div class="copyright container">
             <p class="copyright-text">Copyright © 2020 UNA Health Inc. All rights reserved.</p>
         </div>
+
+    </section>
 
      <!-- Bootstrap JS Scripts -->
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

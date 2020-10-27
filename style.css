@@ -99,6 +99,10 @@ nav.transparent .btn-nav:hover {
     transition: 0.2s;
 }
 
+nav.transparent .btn-nav.fast:hover {
+    color: rgba(147, 77, 190, 0.95) !important;
+}
+
 .btn-nav {
     box-sizing: border-box;
     border-radius: 8px;
