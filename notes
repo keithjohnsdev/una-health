@@ -1,0 +1,33 @@
+- navbar: white 95% opacity instead of f2f2f2
+
+- img file sizes - 100mb
+
+- puzzle section - max height? ---- look at wallet section
+
+- wire carousel links
+
+- home hero button text same as contact button
+
+- remove contact us link from nav
+
+- change hover of hero button to specified hex
+
+- soleil font
+
+- remove opacity on all hero sections
+
+- investigate una wallet nav bug (safari?)
+
+- una fast: same alignment of text left side between hero and grid
+
+- una fast hero p different font
+
+- una wallet text big when window small
+
+- use una fast p font for lists in test
+
+- covid bar weird overlay safari
+
+- test hero p a little thin
+
+- fix new evp laptop image
