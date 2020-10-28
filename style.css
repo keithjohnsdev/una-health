@@ -42,6 +42,11 @@ nav.transparent.wallet {
     transition: 0.5s;
 }
 
+nav.transparent.evp {
+    background: rgba(232, 76, 96, 0.95) !important;
+    transition: 0.5s;
+}
+
 nav ul li a {
     color: #1A1A1A !important;
     margin-top: 5px;
@@ -740,6 +745,81 @@ h2.fast {
     color: rgba(0, 132, 137, 1);
 }
 
+/* ------------------------ EVP Page CSS ------------------------ */
+
+#test-hero.evp {
+    background-color: rgba(232, 76, 96, 1) !important;
+    background-image: url(images/evp-hero-img.png) !important;
+    background-size: 750px !important;
+    background-position: right bottom -55px;
+}
+
+.grid-info.evp {
+    margin-top: 30px !important;
+    text-align: left;
+}
+
+.grid-info.evp h1 {
+    font-size: 36px;
+    padding-bottom: 42px;
+    margin-left: 20px;
+    font-weight: 700px;
+}
+
+.grid-info.evp ul li {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+}
+
+.grid-info.evp ul li::marker {
+    color: rgba(232, 76, 96, 1);
+    font-size: 1.3em;
+}
+
+#tests-validated {
+    text-align: center;
+    padding-top: 120px;
+}
+
+#tests-validated h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47px;
+    padding-bottom: 46px;
+}
+
+.tests {
+    margin: 0 10%;
+    padding-left: 100px;
+    padding-bottom: 46px;
+}
+
+#tests-validated ul {
+    text-align: left;
+    margin: 0;
+}
+
+#tests-validated li::marker {
+    color: rgba(255, 90, 95, 1);
+    font-size: 1.3em;
+}
+
+#tests-validated ul li {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+#tests-validated h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47px;
+    color: rgba(232, 76, 96, 1);
+    padding-bottom: 120px;
+}
+
 /* Media Query Breakpoints */
 
 @media (min-width: 0px) {
@@ -1017,7 +1097,62 @@ h2.fast {
     #positive-outcomes li {
         font-size: 18px;
     }
+
+    /* ------------------------ EVP Page CSS ------------------------ */
+
+    #test-hero.evp {
+        background-image: linear-gradient(to left, rgba(232, 76, 96, 0.3), rgba(232, 76, 96, 0.3)), url(images/evp-hero-img.png) !important;
+        background-size: 350px !important;
+        background-position: right bottom -55px;
+        height: 600px;
+    }
+
+    .grid-info.evp h1 {
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+
+    .grid-info.evp ul li {
+        font-size: 16px;
+        padding-top: 3px;
+    }
+
+    #tests-validated {
+        text-align: center;
+        padding: 20px;
+    }
     
+    #tests-validated h1 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 36px;
+        padding-bottom: 20px;
+    }
+    
+    .tests {
+        margin: auto;
+        padding-left: 0;
+        padding-bottom: 46px;
+        text-align: center;
+    }
+    
+    #tests-validated ul {
+        text-align: left;
+        margin: 0;
+    }
+    
+    #tests-validated ul li {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    
+    #tests-validated h2 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 47px;
+        padding-bottom: 120px;
+    }
 
 }
 
@@ -1079,6 +1214,12 @@ h2.fast {
     #test-learn-more h1 {
         padding: 80px 3% 0;
         font-size: 35px;
+    }
+
+    /* EVP Page */
+
+    .tests {
+        padding-left: initial;
     }
 }
 
@@ -1219,6 +1360,66 @@ h2.fast {
         background-size: 370px !important;
         background-position: center bottom !important;
         height: 690px !important;
+    }
+
+    /* ------------------------ EVP Page CSS ------------------------ */
+
+    #test-hero.evp {
+        background-image: linear-gradient(to left, rgba(232, 76, 96, 0.3), rgba(232, 76, 96, 0.3)), url(images/evp-hero-img.png) !important;
+        background-size: 400px !important;
+        background-position: right bottom -55px;
+        height: 650px;
+    }
+
+    .grid-info.evp {
+        width: auto;
+    }
+
+    .grid-info.evp h1 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .grid-info.evp ul li {
+        font-size: 18px;
+        padding-top: 8px;
+    }
+
+    #tests-validated {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    #tests-validated h1 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 36px;
+        padding-bottom: 20px;
+    }
+    
+    .tests {
+        margin: auto;
+        padding-left: initial;
+        padding-bottom: 46px;
+        text-align: center;
+    }
+    
+    #tests-validated ul {
+        text-align: left;
+        margin: 0;
+    }
+    
+    #tests-validated ul li {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    
+    #tests-validated h2 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 47px;
+        padding-bottom: 120px;
     }
 }
 
@@ -1445,6 +1646,45 @@ h2.fast {
     #positive-outcomes h1 {
         font-size: 48px;
     }
+
+    /* ------------------------ EVP Page CSS ------------------------ */
+
+    #test-hero.evp {
+        background-image: linear-gradient(to left, rgba(232, 76, 96, 0.3), rgba(232, 76, 96, 0.3)), url(images/evp-hero-img.png) !important;
+        background-size: 440px !important;
+        background-position: right bottom -55px;
+        height: 650px;
+    }
+
+    .grid-info.evp {
+        padding-top: 20px;
+        width: auto;
+    }
+
+    .grid-info.evp h1 {
+        font-size: 34px;
+        padding-bottom: 25px;
+    }
+
+    .grid-info.evp ul {
+        padding-bottom: 10px;
+    }
+
+    .grid-info.evp ul li {
+        font-size: 18px;
+        padding-top: 0px;
+    }
+
+    #tests-validated {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    #tests-validated h1 {
+        font-size: 32px;
+        padding-bottom: 35px;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -1623,6 +1863,75 @@ h2.fast {
         background-position: 110% bottom !important;
         height: 750px !important;
     }
+
+    /* ------------------------ EVP Page CSS ------------------------ */
+
+    #test-hero.evp {
+        background-image: url(images/evp-hero-img.png) !important;
+        background-size: 480px !important;
+        background-position: right bottom -55px;
+        height: 750px;
+    }
+
+    .grid-info.evp {
+        padding: 5px 5px;
+        margin: auto;
+    }
+
+    .grid-info.evp h1 {
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+
+    .grid-info.evp ul {
+        padding-bottom: 0px;
+    }
+
+    .grid-info.evp ul li {
+        font-size: 18px;
+        margin-bottom: 12px;
+        line-height: 24px;
+    }
+
+    #tests-validated {
+        text-align: center;
+        padding-top: 60px;
+    }
+    
+    #tests-validated h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 47px;
+        padding-bottom: 46px;
+    }
+    
+    .tests {
+        margin: 0 10%;
+        padding-left: 60px;
+        padding-bottom: 46px;
+    }
+    
+    #tests-validated ul {
+        text-align: left;
+        margin: 0;
+    }
+    
+    #tests-validated li::marker {
+        font-size: 1.3em;
+    }
+    
+    #tests-validated ul li {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    
+    #tests-validated h2 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 47px;
+        padding-bottom: 120px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1767,6 +2076,33 @@ h2.fast {
         background-size: 620px !important;
         background-position: 110% bottom !important;
     }
+
+    /* ------------------------ EVP Page CSS ------------------------ */
+
+    #test-hero.evp {
+        background-size: 620px !important;
+        background-position: right bottom -55px;
+    }
+
+    .grid-info.evp {
+        padding: 30px 45px 0px 10px;
+        margin: auto;
+    }
+
+    .grid-info.evp h1 {
+        font-size: 34px;
+        padding-bottom: 20px;
+    }
+
+    .grid-info.evp ul {
+        padding-bottom: 0px;
+    }
+
+    .grid-info.evp ul li {
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 24px;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -1846,6 +2182,33 @@ h2.fast {
     .fast-hero.wallet {
         background-size: 620px !important;
         background-position: 85% bottom !important;
+    }
+
+    /* -------------------------- EVP Page --------------------------- */
+
+    #test-hero.evp {
+        background-size: 800px !important;
+        background-position: right bottom -55px;
+    }
+
+    .test-hero-info.evp {
+        margin-top: 50px;
+        width: 600px;
+    }
+
+    .grid-info.evp {
+        padding-top: 70px;
+        padding-left: 120px;
+        padding-right: 90px;
+    }
+
+    .grid-info.evp h1 {
+        font-size: 36px;
+        padding-bottom: 42px;
+    }
+
+    .grid-info.evp ul li {
+        line-height: 23px;
     }
 }
 
