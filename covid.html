@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNA Health - Covid</title>
+
+    <!-- Google + Adobe Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/zbh6rum.css">
+
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/c05d91b3d0.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top transparent about">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/una-brand.svg" class="nav-brand-logo-red" alt="">
+            <img src="images/una-brand-white.svg" class="nav-brand-logo-white" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end about" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="una-fast.html">UNA Fast</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="una-wallet.html">UNA Wallet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="una-test.html">UNA Test</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-primary btn-nav btn-login about"
+                        onclick="location.href = 'http://una-admin-prod.s3-website-us-east-1.amazonaws.com';">Login</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-primary btn-nav btn-demo about"
+                        onclick="location.href = 'http://una-admin-prod.s3-website-us-east-1.amazonaws.com';">Schedule a
+                        Demo</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="covid-hero">
+        <div class="container hero-text">
+            <h1>COVID-19 Training Module for Healthcare Staffing Agencies</h1>
+            <p>There is a lot of misinformation circulating around right now about COVID-19 — from how it spreads, the
+                severity of illness it causes, and to what extent it may spread in the United States.
+                Our goal is to utilize all of the resources at our disposal, including expertise from medical
+                professionals with decades of experience, to put together a course for those who don’t have access to
+                current data that will help their healthcare personnel understand the exposure risk.</p>
+        </div>
+    </section>
+
+    <section id="credential-management">
+        <div class="container">
+            <h1>Sign up to download our free course material</h1>
+            <h2>Included in the course:</h2>
+            <div class="row materials">
+                <div class="col-md-4">
+                    <img src="images/icon-one-insight.png" class="material-icon" alt="">
+                    <p>Specific insight regarding symptoms and treatment</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/icon-two-mask.png" class="material-icon" alt="">
+                    <p>Preventative measures</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/icon-two-mask.png" class="material-icon" alt="">
+                    <p>CDC recommendations for infection prevention and control (IPC)</p>
+                </div>
+            </div>
+            <h2>In addition to this baseline material, there’s also a post-test to ensure healthcare personnel fully
+                understand the core foundational basics of coronaviruses, and COVID-19 in particular.</h2>
+            <form class="signup">
+                <div class="form-group row">
+                    <div class="col">
+                        <input id="fullName" name="fullName" placeholder="Enter Your Name" type="text"
+                            class="form-control form-control-lg" required="required">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col">
+                        <input id="email" name="email" placeholder="Enter Your Email Address *" type="text"
+                            class="form-control form-control-lg" required="required">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col">
+                        <button name="submit" type="submit" class="btn btn-hero-demo form-control-lg">Take me to the
+                            Training Module</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <section id="covid-learn-more">
+        <div class="container">
+            <h5>Healthcare personnel are on the front lines when caring for patients with confirmed or possible infection
+                with COVID-19, and therefore have an increased risk of exposure.
+                <br><br>
+                Since this is a new disease and there are still so many unknowns, our best defense is education, coupled
+                with preventive measures, to help keep this critical group of individuals safe.</h5>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row footer-content">
+                <div class="col-6 col-md brand">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/una-brand.svg" class="footer-brand" alt="UNA brand logo">
+                    </a>
+                </div>
+                <div class="col-6 col-md footer-links">
+                    <h6 class="footer-links-header">COMPANY</h6>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <br>
+                    <a href="mailto:hello@unahealth.co" class="footer-link">hello@unahealth.co</a>
+                    <br>
+                    <a href="tel:866-862-4584" class="footer-link">866.862.4584</a>
+                </div>
+                <div class="col-6 col-md footer-links">
+                    <h6 class="footer-links-header">SOLUTIONS</h6>
+                    <a href="una-fast.html" class="footer-link">UNA Fast</a>
+                    <br>
+                    <a href="una-wallet.html" class="footer-link">UNA Wallet</a>
+                    <br>
+                    <a href="una-test.html" class="footer-link">UNA Test</a>
+                </div>
+                <div class="col-6 col-md footer-links">
+                    <h6 class="footer-links-header">QUICK LINKS</h6>
+                    <a href="http://una-admin-prod.s3-website-us-east-1.amazonaws.com" target="_blank"
+                        class="footer-link">Login</a>
+                    <br>
+                    <a href="http://javascript;" class="footer-link"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/unaapp/30min'});return false;">Schedule
+                        Demo</a>
+                </div>
+                <div class="col-6 col-md footer-links">
+                    <h6 class="footer-links-header">CONNECT</h6>
+                    <a href="https://www.linkedin.com/company/una-health" target="_blank"
+                        class="footer-link">LinkedIn</a>
+                    <br>
+                    <a href="https://www.facebook.com/unahealth/" class="footer-link">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright container">
+            <p class="copyright-text">Copyright © 2020 UNA Health Inc. All rights reserved.</p>
+        </div>
+
+    </section>
+
+    <!-- Bootstrap JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Javascript and JQuery Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 50) {
+                $('nav').removeClass('transparent');
+            } else {
+                $('nav').addClass('transparent');
+            }
+        })
+    </script>
+    <script>
+        $(".navbar-toggler").click(function () {
+            $("nav").toggleClass("navbar-about-dropdown");
+        })
+    </script>
+</body>
