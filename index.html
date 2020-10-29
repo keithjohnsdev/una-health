@@ -46,9 +46,6 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="mailto: hello@unahealth.co">Contact Us</a>
-                </li>
-                <li class="nav-item">
                     <button type="button" class="btn btn-outline-primary btn-nav btn-login"
                         onclick="location.href = 'http://una-admin-prod.s3-website-us-east-1.amazonaws.com';">Login</button>
                 </li>
@@ -206,7 +203,15 @@
 
     <!-- Javascript and JQuery Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 50) {
+                $('nav').removeClass('gray');
+            } else {
+                $('nav').addClass('gray');
+            }
+        })
+    </script>
 </body>
 
 </html>

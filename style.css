@@ -23,8 +23,12 @@ a:hover {
 }
 
 nav {
-    background-color: #f2f2f2;
+    background-color: rgb(255, 255, 255, 0.95);
     transition: 0.5s;
+}
+
+nav.gray {
+    background-color: #f2f2f2;
 }
 
 nav.transparent.test {
@@ -51,7 +55,7 @@ nav.transparent.about {
     background-color: transparent;
 }
 
-.navbar-about-dropdown {
+nav.transparent.navbar-about-dropdown {
     background-color: rgba(90, 90, 90, 0.9) !important;
 }
 
@@ -143,8 +147,12 @@ nav.transparent .btn-nav.about:hover {
 
 .btn-login {
     border: 1px solid #008489;
-    background: #F2F2F2;
+    background: rgb(255, 255, 255, 0.95);
     color: #008489;
+}
+
+nav.gray .btn-login {
+    background: #f2f2f2;
 }
 
 a.btn-login {
@@ -152,7 +160,7 @@ a.btn-login {
 }
 
 a.btn-login:hover {
-    color: #F2F2F2 !important;
+    color: rgb(255, 255, 255, 1) !important;
 }
 
 .btn-login:hover {
@@ -163,7 +171,7 @@ a.btn-login:hover {
 
 .btn-demo {
     border: 1px solid #E84C60;
-    background: #F2F2F2;
+    background: rgb(255, 255, 255, 0.95);
     color: #E84C60;
 }
 
@@ -173,12 +181,16 @@ a.btn-login:hover {
     border: 1px solid #E84C60;
 }
 
+nav.gray .btn-demo {
+    background: #f2f2f2;
+}
+
 a.btn-demo {
     color: #E84C60 !important;
 }
 
 a.btn-demo:hover {
-    color: #F2F2F2 !important;
+    color: white !important;
 }
 
 .collapse .btn-nav {
@@ -237,10 +249,11 @@ nav.transparent button span {
     margin: 20px 0;
     padding: 19px 36px 18px;
     box-shadow: 0px 3px 5px 0px rgba(199, 199, 199, 1);
+    font-weight: 700;
 }
 
 .btn-hero-demo:hover {
-    background: red;
+    background: #fd536a;
     color: white;
 }
 
@@ -934,6 +947,112 @@ h2.fast {
     padding-top: 26px;
 }
 
+/* ------------------------ Una Covid Page CSS ------------------------ */
+
+#covid-hero {
+    height: 792px;
+    background-image: linear-gradient(to left, rgba(22, 22, 22, 0.55), rgba(22, 22, 22, 0.55)), url(images/covid-hero-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#covid-hero h1 {
+    font-family: soleil, sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    padding: 200px 40px 45px;
+}
+
+#covid-hero p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+}
+
+#credential-management {
+    padding-top: 110px;
+    text-align: center;
+}
+
+#credential-management h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 53px;
+    padding-bottom: 14px;
+}
+
+#credential-management h2 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 47px;
+    padding-bottom: 95px;
+}
+
+.material-icon {
+    width: 180px;
+}
+
+#credential-management p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.materials {
+    padding-bottom: 73px;
+}
+
+.signup {
+    padding: 45px 6% 0;
+}
+
+.form-control-lg {
+    height: 70px;
+}
+
+#credential-management input {
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 10px;
+}
+
+#credential-management input:focus {
+    background-color: white;
+    border-color: rgba(232, 76, 96, 1);
+    border-radius: 10px;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.signup .btn-hero-demo {
+    margin: 0;
+    box-shadow: none;
+    border-radius: 10px;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+#covid-learn-more {
+    height: 395px;
+    background-color: rgba(72, 72, 72, 1);
+}
+
+#covid-learn-more h5 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: center;
+    color: white;
+    padding-top: 120px;
+}
+
 /* Media Query Breakpoints */
 
 @media (min-width: 0px) {
@@ -943,8 +1062,8 @@ h2.fast {
     }
 
     #hero {
-        background-image: linear-gradient(to left, #f2f2f2b9, #f2f2f2b9), url(images/img-nurse-hero.png);
-        height: 810px;
+        background-image: url(images/img-nurse-hero.png);
+        height: 840px;
         background-position: right -35px bottom;
         background-size: 380px
     }
@@ -1086,7 +1205,7 @@ h2.fast {
     /* -------------------------- UNA Test Page --------------------------- */
 
     #test-hero {
-        background-image: linear-gradient(to left, rgba(36, 164, 219, 0.3), rgba(36, 164, 219, 0.3)), url(images/testing-hero-img.png);
+        background-image: url(images/testing-hero-img.png);
         background-position: right -50px bottom;
         background-size: 400px;
         margin: auto;
@@ -1173,7 +1292,7 @@ h2.fast {
     /* -------------------------- UNA Fast Page --------------------------- */
 
     .fast-hero {
-        background-image: linear-gradient(to left, rgba(147, 77, 190, 0.3), rgba(147, 77, 190, 0.3)), url(images/nurse-tablet.png) !important;
+        background-image: url(images/nurse-tablet.png) !important;
         background-size: 450px !important;
         background-position: center 30px bottom !important;
         height: 630px !important;
@@ -1198,24 +1317,52 @@ h2.fast {
     /* -------------------------- UNA Wallet Page --------------------------- */
 
     .fast-hero.wallet {
-        background-image: linear-gradient(to left, rgba(0, 132, 137, 0.3), rgba(0, 132, 137, 0.3)), url(images/img-wallet-hero.png) !important;
+        background-image: url(images/img-wallet-hero.png) !important;
         background-size: 350px !important;
         background-position: center bottom !important;
-        height: 630px !important;
+        height: 650px !important;
     }
 
     #positive-outcomes h1 {
-        font-size: 36px;
+        font-size: 32px;
+        padding-top: 40px;
+    }
+
+    .outcomes-info {
+        padding-top: 10px;
+        padding-bottom: 50px;
     }
 
     #positive-outcomes li {
         font-size: 18px;
     }
 
+    #cred-mgmt-text h1 {
+        padding-top: 50px;
+        font-size: 32px;
+    }
+
+    #positive-outcomes-img {
+        height: 350px;
+    }
+    
+    #cred-mgmt-text p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+        padding: 36px 30px 35px;
+    }
+
+    #cred-mgmt-img {
+        background-position: center;
+        height: 300px;
+    }
+
     /* ------------------------ EVP Page CSS ------------------------ */
 
     #test-hero.evp {
-        background-image: linear-gradient(to left, rgba(232, 76, 96, 0.3), rgba(232, 76, 96, 0.3)), url(images/evp-hero-img.png) !important;
+        background-image: url(images/evp-hero-img.png) !important;
         background-size: 350px !important;
         background-position: right bottom -55px;
         height: 600px;
@@ -1294,17 +1441,17 @@ h2.fast {
         padding-bottom: 100px;
         text-align: center;
     }
-    
+
     .bio-img {
         width: 184px;
         float: none;
         margin: auto;
     }
-    
+
     .bio-info {
         padding-top: 50px;
     }
-    
+
     .bio-info h2 {
         font-size: 28px;
         font-weight: 700;
@@ -1312,7 +1459,7 @@ h2.fast {
         text-align: center;
         padding-top: 15px;
     }
-    
+
     .bio-info h3 {
         font-size: 24px;
         font-weight: 400;
@@ -1320,7 +1467,7 @@ h2.fast {
         text-align: center;
         padding-bottom: 18px;
     }
-    
+
     .bio-text {
         font-size: 16px;
         font-weight: 400;
@@ -1331,6 +1478,64 @@ h2.fast {
 
     .btn-bio {
         margin: 5px 2px;
+    }
+
+    /* ------------------------ Una Covid Page ------------------------ */
+
+    #covid-hero {
+        height: 680px;
+    }
+
+    #covid-hero h1 {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 120px 0px 30px;
+    }
+
+    #covid-hero p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    .signup .btn-hero-demo {
+        font-size: 12px;
+    }
+
+    #credential-management {
+        padding-top: 50px;
+    }
+    
+    #credential-management h1 {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 46px;
+        padding-bottom: 20px;
+    }
+    
+    #credential-management h2 {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 36px;
+        padding-bottom: 25px;
+    }
+
+    .material-icon {
+        width: 140px;
+    }
+
+    .materials {
+        padding-bottom: 40px;
+    }
+
+    #covid-learn-more {
+        height: auto;
+    }
+
+    #covid-learn-more h5 {
+        font-size: 22px;
+        line-height: 28px;
+        padding: 40px 10px;
     }
 
 }
@@ -1399,6 +1604,12 @@ h2.fast {
 
     .tests {
         padding-left: initial;
+    }
+}
+
+@media (min-width: 379px) {
+    .signup .btn-hero-demo {
+        font-size: initial;
     }
 }
 
@@ -1510,7 +1721,7 @@ h2.fast {
 
     .fast-hero {
         padding-top: 0px !important;
-        background-image: linear-gradient(to left, rgba(147, 77, 190, 0.3), rgba(147, 77, 190, 0.3)), url(images/nurse-tablet.png) !important;
+        background-image: url(images/nurse-tablet.png) !important;
         background-size: 550px !important;
         background-position: 20% bottom !important;
         height: 730px !important;
@@ -1535,7 +1746,7 @@ h2.fast {
     /* -------------------------- UNA Wallet Page --------------------------- */
 
     .fast-hero.wallet {
-        background-image: linear-gradient(to left, rgba(0, 132, 137, 0.3), rgba(0, 132, 137, 0.3)), url(images/img-wallet-hero.png) !important;
+        background-image: url(images/img-wallet-hero.png) !important;
         background-size: 370px !important;
         background-position: center bottom !important;
         height: 690px !important;
@@ -1544,7 +1755,7 @@ h2.fast {
     /* ------------------------ EVP Page CSS ------------------------ */
 
     #test-hero.evp {
-        background-image: linear-gradient(to left, rgba(232, 76, 96, 0.3), rgba(232, 76, 96, 0.3)), url(images/evp-hero-img.png) !important;
+        background-image: url(images/evp-hero-img.png) !important;
         background-size: 400px !important;
         background-position: right bottom -55px;
         height: 650px;
@@ -1621,12 +1832,30 @@ h2.fast {
         text-align: center;
         width: auto;
     }
+
+    /* ------------------------ Una Covid Page ------------------------ */
+
+    #covid-hero {
+        height: 792px;
+    }
+
+    #covid-hero h1 {
+        font-size: 40px;
+        line-height: 46px;
+        padding: 120px 0px 60px;
+    }
+
+    #covid-hero p {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 32px;
+    }
 }
 
 @media (min-width: 768px) {
     #hero {
         height: 750px;
-        background-image: linear-gradient(to left, #f2f2f2b9, #f2f2f2b9), url(images/img-nurse-hero.png);
+        background-image: url(images/img-nurse-hero.png);
         background-position: right bottom;
         background-size: 550px
     }
@@ -1812,7 +2041,7 @@ h2.fast {
 
     .fast-hero {
         padding-top: 20px !important;
-        background-image: linear-gradient(to left, rgba(147, 77, 190, 0.3), rgba(147, 77, 190, 0.3)), url(images/nurse-tablet.png) !important;
+        background-image: url(images/nurse-tablet.png) !important;
         background-size: 700px !important;
         background-position: 110% bottom !important;
         height: 750px !important;
@@ -1837,20 +2066,46 @@ h2.fast {
     /* -------------------------- UNA Wallet Page --------------------------- */
 
     .fast-hero.wallet {
-        background-image: linear-gradient(to left, rgba(0, 132, 137, 0.3), rgba(0, 132, 137, 0.3)), url(images/img-wallet-hero.png) !important;
+        background-image: url(images/img-wallet-hero.png) !important;
         background-size: 500px !important;
         background-position: 110% bottom !important;
         height: 750px !important;
+    }
+
+    #cred-mgmt-text h1 {
+        text-align: center;
+        padding-top: 110px;
+        font-size: 48px;
+    }
+    
+    #cred-mgmt-text p {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: center;
+        padding: 36px 30px 100px;
+    }
+    
+    #cred-mgmt-img {
+        background-color: white;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 65%, #ffffff 99%), url(images/cred-mgmt-nurse.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 600px;
     }
 
     #positive-outcomes h1 {
         font-size: 48px;
     }
 
+    #positive-outcomes-img {
+        height: 720px;
+    }
+
     /* ------------------------ EVP Page CSS ------------------------ */
 
     #test-hero.evp {
-        background-image: linear-gradient(to left, rgba(232, 76, 96, 0.3), rgba(232, 76, 96, 0.3)), url(images/evp-hero-img.png) !important;
+        background-image: url(images/evp-hero-img.png) !important;
         background-size: 440px !important;
         background-position: right bottom -55px;
         height: 650px;
@@ -1918,17 +2173,17 @@ h2.fast {
         padding-bottom: 100px;
         text-align: left;
     }
-    
+
     .bio-img {
         width: 184px;
         float: left;
         margin-right: 49px;
     }
-    
+
     .bio-info {
         padding-top: 50px;
     }
-    
+
     .bio-info h2 {
         font-size: 36px;
         font-weight: 700;
@@ -1936,7 +2191,7 @@ h2.fast {
         text-align: left;
         padding-top: 15px;
     }
-    
+
     .bio-info h3 {
         font-size: 24px;
         font-weight: 400;
@@ -1944,19 +2199,19 @@ h2.fast {
         text-align: left;
         padding-bottom: 18px;
     }
-    
+
     .btn-bio:hover {
         background-color: rgba(232, 76, 96, 1) !important;
         color: white;
     }
-    
+
     .btn-bio.icon {
         background-color: white;
         width: 36px;
         height: 36px;
         padding: 7px 0 8px !important;
     }
-    
+
     .btn-bio.wide {
         background-color: white;
         width: auto;
@@ -1964,19 +2219,19 @@ h2.fast {
         padding: 7px 10px 8px !important;
         font-size: 16px;
     }
-    
+
     .btn-bio span.phone {
         padding-right: 8px;
     }
-    
+
     .btn-bio.schedule {
         padding: 6.5px 10px 10px !important;
     }
-    
+
     .btn-bio span {
         font-size: 20px;
     }
-    
+
     .bio-text {
         font-size: 18px;
         font-weight: 400;
@@ -1989,6 +2244,61 @@ h2.fast {
         margin: initial;
     }
 
+    /* ------------------------ Una Covid Page ------------------------ */
+
+    #covid-hero {
+        height: 792px;
+    }
+
+    #covid-hero h1 {
+        font-size: 56px;
+        line-height: 60px;
+        padding: 160px 40px 45px;
+    }
+
+    #covid-hero p {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 36px;
+    }
+
+    #credential-management {
+        padding-top: 110px;
+        text-align: center;
+    }
+    
+    #credential-management h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 53px;
+        padding-bottom: 14px;
+    }
+    
+    #credential-management h2 {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 47px;
+        padding-bottom: 95px;
+    }
+
+    .material-icon {
+        width: 180px;
+    }
+
+    .materials {
+        padding-bottom: 73px;
+    }
+    
+    #covid-learn-more {
+        height: auto;
+    }
+
+    #covid-learn-more h5 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 31px;
+        padding: 120px 0;
+    }
 }
 
 @media (min-width: 992px) {
@@ -2122,7 +2432,7 @@ h2.fast {
     }
 
     .covid-text {
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 35%;
         line-height: 120px;
         width: 600px;
@@ -2260,6 +2570,14 @@ h2.fast {
         line-height: 36px;
         text-align: left;
         width: 443px;
+    }
+
+    /* Covid Page */
+
+    #covid-hero h1 {
+        font-size: 56px;
+        line-height: 60px;
+        padding: 200px 40px 45px;
     }
 
 }
