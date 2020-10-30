@@ -1,33 +1,55 @@
-- navbar: white 95% opacity instead of f2f2f2
+++ - navbar: white 95% opacity instead of f2f2f2
 
 - img file sizes - 100mb
 
-- puzzle section - max height? ---- look at wallet section
+++ - puzzle section - max height? ---- look at wallet section
 
-- wire carousel links
+++ - wire carousel links
 
-- home hero button text same as contact button
+++ - home hero button text same as contact button
 
-- remove contact us link from nav
+++ - remove contact us link from nav
 
-- change hover of hero button to specified hex
+++ - change hover of hero button to specified hex ***** (made lighter instead of darker) ******
 
-- soleil font
+++ - soleil font
 
-- remove opacity on all hero sections
+++ - remove opacity on all hero sections
 
-- investigate una wallet nav bug (safari?)
+++ - investigate una wallet nav bug (safari?)
 
 - una fast: same alignment of text left side between hero and grid
 
-- una fast hero p different font
+++ - una fast hero p different font
 
-- una wallet text big when window small
+++ - una wallet text big when window small
 
-- use una fast p font for lists in test
+++ - use una fast p font for lists in test
 
-- covid bar weird overlay safari
+++ - covid bar weird overlay safari
 
-- test hero p a little thin
+++ - test hero p a little thin
 
 - fix new evp laptop image
+
+--------
+
+? - font weight consistent between hero and p
+
+++ - home header line height (same as fast)
+
+? - iphone X viewport size
+
+++ - covid 19 link leads to page
+
+- wire up bio links
+
+- connect footer
+
+- facebook connect link in footer new tab
+
+- home page: move nurses down in mobile
+
+- calendly link popup
+
+- link up and remove schedule buttons in about

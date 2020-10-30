@@ -47,10 +47,21 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary btn-nav btn-login fast" onclick="location.href = 'http://una-admin-prod.s3-website-us-east-1.amazonaws.com';">Login</button>
+                    <button type="button" class="btn btn-outline-primary btn-nav btn-login"
+                        onclick="window.open('http://una-admin-prod.s3-website-us-east-1.amazonaws.com')">Login</button>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary btn-nav btn-demo fast" onclick="location.href = 'http://una-admin-prod.s3-website-us-east-1.amazonaws.com';">Schedule a Demo</button>
+                    <div class="html-embed-2 w-embed w-script">
+                        <!-- Calendly link widget begin -->
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript">
+                        </script>
+                        <button type="button" class="btn btn-outline-primary btn-nav btn-demo"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/unaapp/30min'});return false;">Schedule
+                            a
+                            Demo</button>
+                        <!-- Calendly link widget end -->
+                    </div>
                 </li>
             </ul>
         </div>
@@ -177,15 +188,19 @@
                 </div>
                 <div class="col-6 col-md footer-links">
                     <h6 class="footer-links-header">QUICK LINKS</h6>
-                    <a href="http://una-admin-prod.s3-website-us-east-1.amazonaws.com" target="_blank" class="footer-link">Login</a>
+                    <a href="http://una-admin-prod.s3-website-us-east-1.amazonaws.com" target="_blank"
+                        class="footer-link">Login</a>
                     <br>
-                    <a href="http://javascript;" class="footer-link" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/unaapp/30min'});return false;">Schedule Demo</a>
+                    <a href="http://javascript;" class="footer-link"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/unaapp/30min'});return false;">Schedule
+                        Demo</a>
                 </div>
                 <div class="col-6 col-md footer-links">
                     <h6 class="footer-links-header">CONNECT</h6>
-                    <a href="https://www.linkedin.com/company/una-health" target="_blank" class="footer-link">LinkedIn</a>
+                    <a href="https://www.linkedin.com/company/una-health" target="_blank"
+                        class="footer-link">LinkedIn</a>
                     <br>
-                    <a href="https://www.facebook.com/unahealth/" class="footer-link">Facebook</a>
+                    <a href="https://www.facebook.com/unahealth/" target="_blank" class="footer-link">Facebook</a>
                 </div>
             </div>
         </div>

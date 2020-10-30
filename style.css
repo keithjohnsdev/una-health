@@ -3,7 +3,6 @@ body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
     font-family: soleil, sans-serif;
     background-color: white;
 }
@@ -155,6 +154,10 @@ nav.gray .btn-login {
     background: #f2f2f2;
 }
 
+nav.gray .btn-login:hover {
+    background: #008489;
+}
+
 a.btn-login {
     color: #008489 !important;
 }
@@ -183,6 +186,10 @@ a.btn-login:hover {
 
 nav.gray .btn-demo {
     background: #f2f2f2;
+}
+
+nav.gray .btn-demo:hover {
+    background: #E84C60;
 }
 
 a.btn-demo {
@@ -253,7 +260,7 @@ nav.transparent button span {
 }
 
 .btn-hero-demo:hover {
-    background: #fd536a;
+    background: #D04053;
     color: white;
 }
 
@@ -1075,6 +1082,7 @@ h2.fast {
 
     #hero h1 {
         font-size: 45px;
+        line-height: 110%;
         margin: 0 0;
     }
 
@@ -1085,11 +1093,15 @@ h2.fast {
     }
 
     #cross-platform {
-        height: 120px;
+        height: auto;
     }
 
     .cross-icon-div {
         margin: 0;
+    }
+
+    .cross-text-div {
+        padding-bottom: 10px;
     }
 
     .icon-cross-platform {
@@ -1097,14 +1109,14 @@ h2.fast {
     }
 
     .cross-platform-text {
-        font-size: 10px;
+        font-size: 14px;
         line-height: normal;
         padding: 0 0;
         margin: 0;
     }
 
     .standout-text {
-        font-size: 10px;
+        font-size: 14px;
         line-height: normal;
     }
 
@@ -1120,6 +1132,7 @@ h2.fast {
 
     #intro h3 {
         font-size: 32px;
+        line-height: 120%;
         text-align: center;
         margin: 0 30px 50px;
     }
@@ -1140,29 +1153,36 @@ h2.fast {
     }
 
     #ats {
-        margin: -400px 0 0;
-        height: 1200px;
+        margin: 0 0;
+        height: 650px;
         background-size: cover;
-        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 65%), url(images/puzzle-background.png);
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 52%), url(images/puzzle-background.png);
         text-align: center;
     }
 
     .ats-header {
-        margin: 600px 10px 40px;
-        font-size: 40px;
+        margin: 390px 10px 40px;
+        font-size: 32px;
+        line-height: 120%;
         text-align: center;
     }
 
     .ats-p {
         margin: 0 20px 0;
         font-size: 20px;
+        line-height: 130%;
         text-align: center;
     }
 
+    .btn-ats {
+        margin: 30px auto;
+    }
+
     #learn-more {
-        height: 550px;
-        background-position: 35% 100%;
-        background-size: 800px;
+        height: 670px;
+        background-position: left 5px 100%;
+        background-size: 700px;
         text-align: center;
     }
 
@@ -1173,14 +1193,16 @@ h2.fast {
     }
 
     .learn-more-header {
-        font-size: 35px;
-        padding: 40px 0 0;
+        font-size: 32px;
+        line-height: 110%;
+        padding: 40px 5px 0;
         text-align: center;
     }
 
     .learn-more-p {
         margin: 24px 10px 0;
         font-size: 20px;
+        line-height: 130%;
         text-align: center;
     }
 
@@ -1549,7 +1571,18 @@ h2.fast {
     }
 
     #cross-platform {
-        height: 105px;
+        height: auto;
+    }
+
+    .ats-header {
+        margin: 300px 10px 40px;
+        font-size: 32px;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    #learn-more {
+        height: 620px;
     }
 
     #test-hero {
@@ -1611,6 +1644,10 @@ h2.fast {
     .signup .btn-hero-demo {
         font-size: initial;
     }
+
+    .ats-header {
+        margin-top: 200px;
+    }
 }
 
 @media (min-width: 575px) {
@@ -1622,15 +1659,19 @@ h2.fast {
     }
 
     #cross-platform {
-        height: 105px;
+        height: auto;
     }
 
     .cross-platform-text {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .standout-text {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    .ats-header {
+        margin-top: 150px;
     }
 
     .footer-link {
@@ -1854,7 +1895,7 @@ h2.fast {
 
 @media (min-width: 768px) {
     #hero {
-        height: 750px;
+        height: 770px;
         background-image: url(images/img-nurse-hero.png);
         background-position: right bottom;
         background-size: 550px
@@ -1909,25 +1950,30 @@ h2.fast {
 
     #ats {
         margin: -320px 0 0;
-        height: 1300px;
-        background-size: cover;
-        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 68%), url(images/puzzle-background.png);
+        height: 750px;
+        background-size: contain;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 60%), url(images/puzzle-background.png);
     }
 
     .ats-header {
         margin: 600px 50px 30px;
         font-size: 48px;
-        text-align: left;
+        text-align: center;
     }
 
     .ats-p {
-        margin: 0 50px 0;
+        margin: 10px 50px 15px;
         font-size: 24px;
-        text-align: left;
+        line-height: 140%;
+        text-align: center;
     }
 
     .ats-info {
-        text-align: left;
+        text-align: center;
+    }
+
+    .btn-ats {
+        text-align: center;
     }
 
     #learn-more {
@@ -1937,20 +1983,22 @@ h2.fast {
     }
 
     .learn-more-content {
-        position: absolute;
-        right: 20px;
-        margin: 20px 0 0;
+        position: static;
+        padding-top: 20px;
+        margin: 0px 0 0 370px;
+        text-align: left;
     }
 
     .learn-more-header {
         font-size: 40px;
-        text-align: center;
+        text-align: left;
+        padding: 70px 0 0;
     }
 
     .learn-more-p {
         margin: 24px 0 0;
         font-size: 22px;
-        text-align: center;
+        text-align: left;
     }
 
     /* -------------------------- UNA Test Page --------------------------- */
@@ -2343,10 +2391,26 @@ h2.fast {
 
     #ats {
         margin: -300px 0 0;
-        height: 1550px;
-        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 10%, #ffffff 75%), url(images/puzzle-background.png);
+        height: 800px;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 60%), url(images/puzzle-background.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
+    }
+
+    .ats-header {
+        text-align: left;
+    }
+
+    .ats-p {
+        text-align: left;
+    }
+
+    .ats-info {
+        text-align: left;
+    }
+
+    .btn-ats {
+        margin-left: 50px;
     }
 
     #learn-more {
@@ -2355,19 +2419,21 @@ h2.fast {
     }
 
     .learn-more-content {
-        position: absolute;
-        right: 80px;
-        margin: 60px 0 0;
+        position: static;
+        padding-top: 20px;
+        margin: 0px 0 0 500px;
         text-align: left;
     }
 
     .learn-more-header {
-        font-size: 48px;
+        font-size: 40px;
         text-align: left;
+        padding: 100px 0 0;
     }
 
     .learn-more-p {
-        font-size: 24px;
+        margin: 24px 0 0;
+        font-size: 22px;
         text-align: left;
     }
 
@@ -2605,9 +2671,10 @@ h2.fast {
 
     #ats {
         margin: -200px 0 0;
-        height: 1550px;
-        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 20%, #ffffff 80%), url(images/puzzle-background.png);
+        height: 900px;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 67%), url(images/puzzle-background.png);
         background-position: bottom;
+        background-size: contain;
     }
 
     #learn-more {
@@ -2615,9 +2682,22 @@ h2.fast {
     }
 
     .learn-more-content {
-        position: absolute;
-        right: 10%;
-        margin: 100px 0 0;
+        position: static;
+        padding-top: 20px;
+        margin: 0px 0 0 700px;
+        text-align: left;
+    }
+
+    .learn-more-header {
+        font-size: 40px;
+        text-align: left;
+        padding: 100px 0 0;
+    }
+
+    .learn-more-p {
+        margin: 24px 0 0;
+        font-size: 22px;
+        text-align: left;
     }
 
     #footer {
@@ -2784,9 +2864,22 @@ h2.fast {
     }
 
     .learn-more-content {
-        position: absolute;
-        right: 15%;
-        margin: 100px 0 0;
+        position: static;
+        padding-top: 20px;
+        margin: 0px 0 0 800px;
+        text-align: left;
+    }
+
+    .learn-more-header {
+        font-size: 40px;
+        text-align: left;
+        padding: 120px 0 0;
+    }
+
+    .learn-more-p {
+        margin: 24px 0 0;
+        font-size: 22px;
+        text-align: left;
     }
 
     /* -------------------------- UNA Test Page --------------------------- */
@@ -2884,16 +2977,29 @@ h2.fast {
 
     #ats {
         margin: -200px 0 0;
-        height: 1850px;
-        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 20%, #ffffff 85%), url(images/puzzle-background.png);
-        background-size: cover;
+        height: 950px;
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0),  #ffffff 70%), url(images/puzzle-background.png);
+        background-size: contain;
         background-position: bottom;
     }
 
     .learn-more-content {
-        position: absolute;
-        right: 20%;
-        margin: 100px 0 0;
+        position: static;
+        padding-top: 20px;
+        margin: 0px 0 0 1000px;
+        text-align: left;
+    }
+
+    .learn-more-header {
+        font-size: 40px;
+        text-align: left;
+        padding: 120px 0 0;
+    }
+
+    .learn-more-p {
+        margin: 24px 0 0;
+        font-size: 22px;
+        text-align: left;
     }
 
     #footer {

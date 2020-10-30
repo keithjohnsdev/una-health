@@ -23,7 +23,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top gray">
         <a class="navbar-brand" href="index.html">
             <img src="images/una-brand.svg" class="nav-brand-logo" alt="">
         </a>
@@ -47,12 +47,20 @@
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn btn-outline-primary btn-nav btn-login"
-                        onclick="location.href = 'http://una-admin-prod.s3-website-us-east-1.amazonaws.com';">Login</button>
+                        onclick="window.open('http://una-admin-prod.s3-website-us-east-1.amazonaws.com')">Login</button>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary btn-nav btn-demo"
-                        onclick="location.href = 'http://una-admin-prod.s3-website-us-east-1.amazonaws.com';">Schedule a
-                        Demo</button>
+                    <div class="html-embed-2 w-embed w-script">
+                        <!-- Calendly link widget begin -->
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript">
+                        </script>
+                        <button type="button" class="btn btn-outline-primary btn-nav btn-demo"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/unaapp/30min'});return false;">Schedule
+                            a
+                            Demo</button>
+                        <!-- Calendly link widget end -->
+                    </div>
                 </li>
             </ul>
         </div>
@@ -64,7 +72,17 @@
             <h1>Modernizing the hiring process.</h1>
             <p>UNA Health is transforming the way healthcare professionals manage their credentials, become “career
                 ready” and apply for available jobs using “one-click” submit technology.</p>
-            <button type="button" class="btn btn-hero-demo">SCHEDULE A DEMO</button>
+            <div class="html-embed-2 w-embed w-script">
+                <!-- Calendly link widget begin -->
+                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+                <button type="button" class="btn btn-hero-demo"
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/unaapp/30min'});return false;">SCHEDULE
+                    A
+                    DEMO</button>
+                <!-- Calendly link widget end -->
+            </div>
+
         </div>
     </section>
 
@@ -98,13 +116,13 @@
         </div>
         <div id="carouselExampleIndicators" class="container carousel slide una-slider" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/una-test-slider.svg" class="d-block w-100" alt="...">
+                <div class="carousel-item active" onclick="location.href = 'una-test.html';">
+                    <img src="images/una-test-slider.svg" class="d-block w-100 slider-img" alt="...">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" onclick="location.href = 'una-fast.html';">
                     <img src="images/fast.svg" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" onclick="location.href = 'una-wallet.html';">
                     <img src="images/wallet.svg" class="d-block w-100" alt="...">
                 </div>
             </div>
@@ -129,7 +147,8 @@
             <h1 class="ats-header">Wondering how UNA works with your ATS?</h1>
             <p class="ats-p">UNA Health seamlessly integrates with your ATS through a simple API key.<br> No software to
                 install or maintain. Boom! Done.</p>
-            <button type="button" class="btn btn-outline-primary btn-nav btn-demo btn-ats">CONTACT US FOR
+            <button type="button" class="btn btn-outline-primary btn-nav btn-demo btn-ats"
+                onclick="location.href = 'mailto:hello@unahealth.co';">CONTACT US FOR
                 DETAILS</button>
         </div>
     </section>
@@ -138,7 +157,8 @@
         <div class="learn-more-content">
             <h2 class="learn-more-header">Want to learn more?</h2>
             <p class="learn-more-p">Our team is ready to help answer any questions.</p>
-            <button type="button" class="btn btn-outline-primary btn-contact">CONTACT US NOW</button>
+            <button type="button" class="btn btn-outline-primary btn-contact"
+                onclick="location.href = 'mailto:hello@unahealth.co';">CONTACT US NOW</button>
         </div>
     </section>
 
@@ -180,7 +200,7 @@
                     <a href="https://www.linkedin.com/company/una-health" target="_blank"
                         class="footer-link">LinkedIn</a>
                     <br>
-                    <a href="https://www.facebook.com/unahealth/" class="footer-link">Facebook</a>
+                    <a href="https://www.facebook.com/unahealth/" target="_blank" class="footer-link">Facebook</a>
                 </div>
             </div>
         </div>
