@@ -83,12 +83,16 @@ nav.transparent .navbar-nav li a:hover {
 .nav-brand-logo {
     margin-top: -7px;
     transition: 0.5s;
+    width: 80px;
+    padding-left: 9.5px;
 }
 
 .nav-brand-logo-red {
     margin-top: -7px;
     visibility: visible;
     transition: 0.5s;
+    width: 80px;
+    padding-left: 9.5px;
 }
 
 nav.transparent .nav-brand-logo-red {
@@ -99,13 +103,15 @@ nav.transparent .nav-brand-logo-red {
 nav.transparent .nav-brand-logo-white {
     position: fixed;
     left: 16px;
-    top: 21px;
+    top: 20px;
     visibility: visible;
     transition: 0.5s;
 }
 
 .nav-brand-logo-white {
     visibility: hidden;
+    width: 80px;
+    padding-left: 9.5px;
 }
 
 .nav-item {
@@ -125,15 +131,15 @@ nav.transparent .btn-nav:hover {
     transition: 0.2s;
 }
 
-nav.transparent .btn-nav.fast:hover {
+nav.transparent.fast .btn-nav:hover {
     color: rgba(147, 77, 190, 1) !important;
 }
 
-nav.transparent .btn-nav.wallet:hover {
+nav.transparent.wallet .btn-nav:hover {
     color: rgba(0, 132, 137, 1) !important;
 }
 
-nav.transparent .btn-nav.about:hover {
+nav.transparent.about .btn-nav:hover {
     color: rgb(103, 103, 103) !important;
 }
 
@@ -636,6 +642,16 @@ nav.transparent button span {
     background-size: 510px;
 }
 
+#covid-bar a {
+    color: white;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+#covid-bar a:hover {
+    color: rgb(255, 184, 184);
+}
+
 .covid-text {
     font-size: 24px;
     text-align: center;
@@ -1064,8 +1080,8 @@ h2.fast {
 
 @media (min-width: 0px) {
     nav.transparent .nav-brand-logo-white {
-        left: 15.75px;
-        top: 15px;
+        left: 16px;
+        top: 14px;
     }
 
     #hero {
@@ -2352,7 +2368,7 @@ h2.fast {
 @media (min-width: 992px) {
     nav.transparent .nav-brand-logo-white {
         left: 16px;
-        top: 21px;
+        top: 19px;
     }
 
     #hero {
