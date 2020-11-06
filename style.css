@@ -649,7 +649,7 @@ nav.transparent button span {
 }
 
 #covid-bar a:hover {
-    color: rgb(255, 184, 184);
+    color: #F98957;
 }
 
 .covid-text {
@@ -1402,8 +1402,8 @@ h2.fast {
     #test-hero.evp {
         background-image: url(images/evp-hero-img.png) !important;
         background-size: 350px !important;
-        background-position: right bottom -55px;
-        height: 600px;
+        background-position: center bottom -10px;
+        height: 560px;
     }
 
     .grid-info.evp h1 {
@@ -1581,7 +1581,7 @@ h2.fast {
 @media (min-width: 350px) {
 
     #hero {
-        height: 790px;
+        height: 830px;
         background-position: right -30px bottom;
         background-size: 400px
     }
@@ -1736,9 +1736,9 @@ h2.fast {
     }
 
     .bullet {
-        margin-bottom: 5px;
+        margin-bottom: 4px;
         font-size: 10px;
-        line-height: 15px;
+        line-height: 14px;
     }
 
     .single-col-img {
@@ -1754,7 +1754,7 @@ h2.fast {
     }
 
     .covid-text {
-        font-size: 19px;
+        font-size: 18px;
         margin: auto;
         line-height: 120px;
         padding-top: 0;
@@ -1786,17 +1786,17 @@ h2.fast {
 
     .grid-info.fast {
         text-align: left;
-        padding: auto;
+        padding: 20px 30px;
     }
 
     .grid-info.fast h2 {
         text-align: left !important;
-        font-size: 24px;
-        line-height: 30px !important;
+        font-size: 20px;
+        line-height: 26px !important;
     }
 
     .grid-info.fast h3 {
-        font-size: 16px;
+        font-size: 14px;
         padding-top: 10px;
     }
 
@@ -1813,9 +1813,9 @@ h2.fast {
 
     #test-hero.evp {
         background-image: url(images/evp-hero-img.png) !important;
-        background-size: 400px !important;
-        background-position: right bottom -55px;
-        height: 650px;
+        background-size: 480px !important;
+        background-position: center bottom;
+        height: 690px;
     }
 
     .grid-info.evp {
@@ -2170,9 +2170,9 @@ h2.fast {
 
     #test-hero.evp {
         background-image: url(images/evp-hero-img.png) !important;
-        background-size: 440px !important;
-        background-position: right bottom -55px;
-        height: 650px;
+        background-size: 550px !important;
+        background-position: right -20px bottom -20px;
+        height: 720px;
     }
 
     .grid-info.evp {
@@ -2375,7 +2375,7 @@ h2.fast {
         height: 750px;
         background-image: url(images/img-nurse-hero.png);
         background-position: right -20px bottom;
-        background-size: 670px
+        background-size: 600px
     }
 
     .hero-info {
@@ -2564,9 +2564,9 @@ h2.fast {
 
     #test-hero.evp {
         background-image: url(images/evp-hero-img.png) !important;
-        background-size: 480px !important;
-        background-position: right bottom -55px;
-        height: 750px;
+        background-size: 650px !important;
+        background-position: right -30px bottom -55px;
+        height: 850px;
     }
 
     .grid-info.evp {
@@ -2669,7 +2669,7 @@ h2.fast {
         height: 720px;
         background-position: right -30px bottom;
         background-size: auto;
-        background-size: 720px;
+        background-size: 680px;
     }
 
     .hero-info {
@@ -2824,8 +2824,9 @@ h2.fast {
     /* ------------------------ EVP Page CSS ------------------------ */
 
     #test-hero.evp {
-        background-size: 620px !important;
-        background-position: right bottom -55px;
+        background-size: 800px !important;
+        background-position: right -40px bottom -40px;
+        height: 950px;
     }
 
     .grid-info.evp {
@@ -2867,7 +2868,7 @@ h2.fast {
         height: 720px;
         background-position: right bottom;
         background-size: auto;
-        background-size: 800px;
+        background-size: 750px;
     }
 
     .hero-info {
@@ -2957,8 +2958,8 @@ h2.fast {
     /* -------------------------- EVP Page --------------------------- */
 
     #test-hero.evp {
-        background-size: 800px !important;
-        background-position: right bottom -55px;
+        background-size: 850px !important;
+        background-position: right bottom -40px;
     }
 
     .test-hero-info.evp {
