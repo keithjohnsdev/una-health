@@ -1383,7 +1383,7 @@ h2.fast {
     #positive-outcomes-img {
         height: 350px;
     }
-    
+
     #cred-mgmt-text p {
         font-size: 20px;
         font-weight: 400;
@@ -1543,14 +1543,14 @@ h2.fast {
     #credential-management {
         padding-top: 50px;
     }
-    
+
     #credential-management h1 {
         font-size: 38px;
         font-weight: 700;
         line-height: 46px;
         padding-bottom: 20px;
     }
-    
+
     #credential-management h2 {
         font-size: 28px;
         font-weight: 400;
@@ -2141,7 +2141,7 @@ h2.fast {
         padding-top: 110px;
         font-size: 48px;
     }
-    
+
     #cred-mgmt-text p {
         font-size: 24px;
         font-weight: 400;
@@ -2149,7 +2149,7 @@ h2.fast {
         text-align: center;
         padding: 36px 30px 100px;
     }
-    
+
     #cred-mgmt-img {
         background-color: white;
         background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 65%, #ffffff 99%), url(images/cred-mgmt-nurse.png);
@@ -2330,14 +2330,14 @@ h2.fast {
         padding-top: 110px;
         text-align: center;
     }
-    
+
     #credential-management h1 {
         font-size: 48px;
         font-weight: 700;
         line-height: 53px;
         padding-bottom: 14px;
     }
-    
+
     #credential-management h2 {
         font-size: 36px;
         font-weight: 400;
@@ -2352,7 +2352,7 @@ h2.fast {
     .materials {
         padding-bottom: 73px;
     }
-    
+
     #covid-learn-more {
         height: auto;
     }
@@ -2995,7 +2995,7 @@ h2.fast {
     #ats {
         margin: -200px 0 0;
         height: 950px;
-        background-image: linear-gradient(to top, rgb(255, 255, 255, 0),  #ffffff 70%), url(images/puzzle-background.png);
+        background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 70%), url(images/puzzle-background.png);
         background-size: contain;
         background-position: bottom;
     }
