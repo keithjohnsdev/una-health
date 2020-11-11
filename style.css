@@ -932,7 +932,7 @@ h2.fast {
 
 .btn-bio:hover {
     background-color: rgba(232, 76, 96, 1) !important;
-    color: white;
+    color: #ffffff;
 }
 
 .btn-bio.icon {
@@ -2669,7 +2669,7 @@ h2.fast {
         height: 720px;
         background-position: right -30px bottom;
         background-size: auto;
-        background-size: 680px;
+        background-size: 640px;
     }
 
     .hero-info {
@@ -2868,7 +2868,7 @@ h2.fast {
         height: 720px;
         background-position: right bottom;
         background-size: auto;
-        background-size: 750px;
+        background-size: 720px;
     }
 
     .hero-info {
