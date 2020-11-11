@@ -441,6 +441,58 @@ nav.transparent button span {
     border: #E84C60;
 }
 
+#testimonials {
+    height: auto;
+    background-color: white;
+    text-align: center;
+    padding: 110px 0 50px;
+    margin: 0 8%;
+}
+
+#testimonials .text-heading {
+    max-width: 662px;
+}
+
+#testimonials h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#testimonials h2 {
+    font-size: 24px;
+    line-height: 150%;
+    padding: 30px 0 60px;
+}
+
+.spacing {
+    margin: 0 3%;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#testimonials p {
+    text-align: left;
+    padding: 11px 0 25px;
+    size: 24px;
+    font-weight: 700;
+}
+
+#testimonials .job-title {
+    color: rgba(232, 76, 96, 1);
+    font-weight: 400;
+}
+
 #learn-more {
     height: 640px;
     background-color: #E84C60;
@@ -1086,7 +1138,7 @@ h2.fast {
 
     #hero {
         background-image: url(images/img-nurse-hero.png);
-        height: 840px;
+        height: 900px;
         background-position: right -35px bottom;
         background-size: 380px
     }
@@ -1193,6 +1245,19 @@ h2.fast {
 
     .btn-ats {
         margin: 30px auto;
+    }
+    
+    #testimonials {
+        padding: 50px 0 30px;
+    }
+
+    #testimonials h1 {
+        font-size: 32px;
+    }
+
+    #testimonials h2 {
+        font-size: 20px;
+        padding: 30px 0 40px;
     }
 
     #learn-more {
@@ -1992,6 +2057,19 @@ h2.fast {
         text-align: center;
     }
 
+    #testimonials {
+        padding: 80px 0 50px;
+    }
+
+    #testimonials h1 {
+        font-size: 48px;
+    }
+
+    #testimonials h2 {
+        font-size: 24px;
+        padding: 30px 0 60px;
+    }
+
     #learn-more {
         height: 640px;
         background-position: 20% 100%;
@@ -2427,6 +2505,19 @@ h2.fast {
 
     .btn-ats {
         margin-left: 50px;
+    }
+
+    #testimonials {
+        padding: 100px 0 50px;
+    }
+    
+    #testimonials h1 {
+        font-size: 48px;
+    }
+    
+    #testimonials h2 {
+        font-size: 24px;
+        padding: 30px 0 60px;
     }
 
     #learn-more {
