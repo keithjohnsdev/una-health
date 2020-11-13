@@ -143,6 +143,10 @@ nav.transparent.about .btn-nav:hover {
     color: rgb(103, 103, 103) !important;
 }
 
+nav.transparent.evp .btn-nav:hover {
+    color: rgba(232, 76, 96, 0.95) !important;
+}
+
 .btn-nav {
     box-sizing: border-box;
     border-radius: 8px;
@@ -652,7 +656,6 @@ nav.transparent button span {
     padding-top: 90px;
     padding-right: 75px;
     width: 495px;
-    max-height: 620px;
 }
 
 #comp-testing h2 {
@@ -2840,7 +2843,6 @@ h2.fast {
     .grid-info {
         padding: 70px 70px 53px;
         width: 495px;
-        max-height: 620px;
     }
 
     #comp-testing h2 {
