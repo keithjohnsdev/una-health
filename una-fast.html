@@ -12,6 +12,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/zbh6rum.css">
 
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -157,6 +160,72 @@
         </div>
     </section>
 
+    <section id="journey">
+        <div class="container">
+            <h1>Let’s take you on a candidate’s journey through the UNA platform.</h1>
+            <h3>All three UNA applications were built to work together and hit every step of the candidates journey from
+                the first job application through being hired and beyond. </h3>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-left">
+                    <img class="step-img" src="images/step1-img.png" alt="">
+                    <h2>Fast Apply</h2>
+                    <p>Captures First & Last Name, email, phone and clinical specialty (ER)</p>
+                </div>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-left">
+                    <img class="step-img" src="images/step2-img.png" alt="">
+                    <h2>ER-RN Checklist</h2>
+                    <p>Fast Apply triggers the set up od an ER Skills Checklist for preparation of Phase 1 submission.
+                    </p>
+                </div>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-left">
+                    <img class="step-img" src="images/step3-img.png" alt="">
+                    <h2>Credentials</h2>
+                    <p>ER-RN required BLS & ACLS. Candidate prompted to upload via UNA Wallet.</p>
+                </div>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-left">
+                    <img class="step-img" src="images/step4-img.png" alt="">
+                    <h2>JR Candidate Sync API - Step 1</h2>
+                    <p>Triggers notification to recruiter that required info for Phase 1 submission is complete</p>
+                </div>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-left">
+                    <img class="step-img" src="images/step5-img.png" alt="">
+                    <h2>Phase 1 Submit</h2>
+                    <p>Recruiter submits Phase 1 candidate profile.</p>
+                </div>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-left">
+                    <img class="step-img" src="images/step6-img.png" alt="">
+                    <h2>Acceptance Trigger</h2>
+                    <p>Candidate notified to complete ER Exam, education and upload resume, in prep for Phase 2 submit.
+                    </p>
+                </div>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-left">
+                    <img class="step-img" src="images/step7-img.png" alt="">
+                    <h2>JR Candidate Sync API - Step 2</h2>
+                    <p>Triggers notification to recruiter that required info for Phase 2 submission is complete.</p>
+                </div>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-left">
+                    <img class="step-img" src="images/step8-img.png" alt="">
+                    <h2>Final Submission</h2>
+                    <p>Recruiter submits final employment profile to facility with just a few clicks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="test-learn-more" class="fast">
         <div class="test-learn-more-content">
             <h1 class="learn-more-test">Learn more about UNA Fast</h1>
@@ -234,5 +303,14 @@
                 $('nav').addClass('transparent');
             }
         })
+    </script>
+
+<!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            anchorPlacement: 'bottom-bottom',
+        });
     </script>
 </body>
