@@ -1115,6 +1115,7 @@ h2.fast {
 
 #credential-management {
     padding-top: 110px;
+    margin-bottom: -350px;
     text-align: center;
 }
 
@@ -1151,6 +1152,11 @@ h2.fast {
 .signup {
     padding: 45px 6% 0;
 }
+
+/* form.hs-form fieldset, form.hs-form fieldset.form-columns-1 .hs-input {
+    max-width: 10vw !important;
+    width: 10vw !important;
+} */
 
 .form-control-lg {
     height: 70px;
@@ -1977,6 +1983,10 @@ h2.fast {
         font-size: 18px;
     }
 
+    .middle-line {
+        margin-bottom: 0px !important;
+    }
+
     .step {
         margin-top: 24px;
         padding: 20px;
@@ -1993,7 +2003,7 @@ h2.fast {
     }
     
     .step p {
-        font-size: 16px;
+        font-size: 15px;
         margin-top: 0px;
     }
 
@@ -2784,8 +2794,9 @@ h2.fast {
     }
 
     .grid-info.fast h3 {
-        font-size: 24px;
+        font-size: 20px;
         padding-top: 24px;
+        line-height: 150%;
     }
 
     #journey {
@@ -2971,7 +2982,7 @@ h2.fast {
     .learn-more-content {
         position: static;
         padding-top: 20px;
-        margin: 0px 0 0 700px;
+        margin: 0px 0 0 600px;
         text-align: left;
     }
 
@@ -3018,7 +3029,7 @@ h2.fast {
     }
 
     .grid-info {
-        padding: 70px 70px 53px;
+        padding: 60px 70px 45px;
         width: 495px;
     }
 
@@ -3034,7 +3045,7 @@ h2.fast {
     }
 
     .bullet {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         font-size: 18px;
         line-height: 23px;
     }
@@ -3078,7 +3089,7 @@ h2.fast {
     }
 
     .grid-info.fast h3 {
-        font-size: 24px;
+        font-size: 22px;
         padding-top: 24px;
         line-height: 150%;
         margin: auto;
