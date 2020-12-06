@@ -756,6 +756,23 @@ nav.transparent button span {
 
 /* ------------------------ Una Fast Page CSS ------------------------ */
 
+.coming-soon {
+    text-align: center;
+    width: 100%;
+    height: 48px;
+    color: white;
+    padding: 15px 0 0px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #FF5A5F 0%, #E84C60 100%),
+    linear-gradient(0deg, #E84C60, #E84C60);
+    margin-top: 10px;
+}
+
+.coming-soon-text {
+    font-size: 16px;
+    line-height: 100%;
+}
+
 .fast-hero {
     background-color: rgba(147, 77, 190, 1) !important;
     background-image: url(images/nurse-tablet.png) !important;
@@ -1469,6 +1486,10 @@ h2.fast {
         background-size: 450px !important;
         background-position: center 30px bottom !important;
         height: 630px !important;
+    }
+
+    .coming-soon {
+        margin-top: 55px;
     }
 
     .grid-info.fast {
@@ -2331,6 +2352,10 @@ h2.fast {
         height: 750px !important;
     }
 
+    .coming-soon {
+        margin-top: 35px;
+    }
+
     .grid-info.fast {
         padding-left: 50px !important;
         padding-top: 0px !important;
@@ -2780,6 +2805,10 @@ h2.fast {
         background-size: 800px !important;
         background-position: 110% bottom !important;
         height: 750px !important;
+    }
+
+    .coming-soon {
+        margin-top: 5px;
     }
 
     .grid-info.fast {
