@@ -313,7 +313,7 @@ nav.transparent button span {
 #intro {
     background: white;
     margin: 90px 0;
-    height: 720px;
+    height: auto;
     z-index: 0;
     text-align: center;
 }
@@ -334,6 +334,10 @@ nav.transparent button span {
     line-height: 46px;
     text-align: left;
     margin: 0 50px 90px;
+}
+
+.services-img {
+    width: 90%;
 }
 
 .una-slider {
@@ -405,14 +409,14 @@ nav.transparent button span {
 }
 
 #ats {
-    margin: -200px 0 0;
+    margin: 0 0 0;
     height: 1050px;
     background-image: linear-gradient(to top, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 30%, #ffffff 58%), url(images/puzzle-background.png);
     background-position: bottom;
 }
 
 .ats-header {
-    margin: 600px 50px 30px;
+    margin: 0 50px 30px;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -1317,7 +1321,7 @@ h2.fast {
     }
 
     .ats-header {
-        margin: 390px 10px 40px;
+        margin: 0 10px 40px;
         font-size: 32px;
         line-height: 120%;
         text-align: center;
@@ -1781,7 +1785,7 @@ h2.fast {
     }
 
     .ats-header {
-        margin: 300px 10px 40px;
+        margin: 0 10px 40px;
         font-size: 32px;
         line-height: 120%;
         text-align: center;
@@ -1852,7 +1856,7 @@ h2.fast {
     }
 
     .ats-header {
-        margin-top: 200px;
+        margin-top: 0;
     }
 }
 
@@ -1877,7 +1881,7 @@ h2.fast {
     }
 
     .ats-header {
-        margin-top: 150px;
+        margin-top: 0;
     }
 
     .footer-link {
@@ -2193,14 +2197,14 @@ h2.fast {
     }
 
     #ats {
-        margin: -320px 0 0;
+        margin: 0 0 0;
         height: 750px;
         background-size: contain;
         background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 60%), url(images/puzzle-background.png);
     }
 
     .ats-header {
-        margin: 600px 50px 30px;
+        margin: 0 50px 30px;
         font-size: 48px;
         text-align: center;
     }
@@ -2665,7 +2669,7 @@ h2.fast {
     }
 
     #ats {
-        margin: -300px 0 0;
+        margin: 0 0 0;
         height: 800px;
         background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 60%), url(images/puzzle-background.png);
         background-repeat: no-repeat;
@@ -2997,7 +3001,7 @@ h2.fast {
     }
 
     #ats {
-        margin: -200px 0 0;
+        margin: 0 0 0;
         height: 900px;
         background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 67%), url(images/puzzle-background.png);
         background-position: bottom;
@@ -3338,7 +3342,7 @@ h2.fast {
     }
 
     #ats {
-        margin: -200px 0 0;
+        margin: 0 0 0;
         height: 950px;
         background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 70%), url(images/puzzle-background.png);
         background-size: contain;
