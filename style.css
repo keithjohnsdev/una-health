@@ -313,7 +313,7 @@ nav.transparent button span {
 #intro {
     background: white;
     margin: 90px 0;
-    height: 720px;
+    height: auto;
     z-index: 0;
     text-align: center;
 }
@@ -333,75 +333,45 @@ nav.transparent button span {
     font-weight: 700;
     line-height: 46px;
     text-align: left;
-    margin: 0 50px 90px;
+    margin: 0 50px 0px;
 }
 
-.una-slider {
-    width: 1080px;
-    text-align: center;
-}
-
-.carousel-inner {
-    /* box-shadow: 0px 15px 15px 0px rgb(211, 211, 211); */
+.service {
+    margin: 0 50px;
+    color: white;
+    height: auto;
+    background: url(images/una-fast-banner.png);
+    background-position: right;
     border-radius: 24px;
-    text-align: center;
+    text-align: left;
+    padding: 36px 5% 42px;
+    margin-bottom: 20px;
 }
 
-.slide-info {
-    text-align: center;
-    margin-bottom: 50px;
+.service.test {
+    background: url(images/una-test-banner.png);
+    background-position: right;
 }
 
-.slide-text {
-    margin: 30px 0 -21px;
-    font-family: soleil, sans-serif;
-    padding: 0;
-    text-align: center;
+.service.wallet {
+    background: linear-gradient(to left, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 17%, #008489 45%), url(images/una-wallet-banner.png);
+    background-position: right;
+}
+
+.banner-icon {
+    width: 32%;
+}
+
+.wallet .banner-icon {
+    width: 40%;
+}
+
+.service p {
     font-size: 24px;
     font-style: italic;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-
-.una-test-slide {
-    background-image: url(images/una-test-slider.png);
-}
-
-.carousel-indicators {
-    z-index: 100;
-    bottom: -50px;
-    border-radius: 100%;
-}
-
-.carousel-indicators li {
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    margin: 0 9px;
-    background-color: #DBDBDB;
-
-}
-
-.test.active {
-    background-color: #24A4DB;
-}
-
-.fast.active {
-    background-color: #934DBE;
-}
-
-.wallet.active {
-    background-color: #008489;
-}
-
-.carousel-control-prev-icon {
-    margin-top: -110px;
-}
-
-.carousel-control-next-icon {
-    margin-top: -110px;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 10%;
 }
 
 #ats {
@@ -764,7 +734,7 @@ nav.transparent button span {
     padding: 15px 0 0px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: linear-gradient(180deg, #FF5A5F 0%, #E84C60 100%),
-    linear-gradient(0deg, #E84C60, #E84C60);
+        linear-gradient(0deg, #E84C60, #E84C60);
     margin-top: 10px;
 }
 
@@ -1275,6 +1245,46 @@ h2.fast {
         line-height: normal;
     }
 
+    .service {
+        padding: 15px 5% 10px;
+        margin-bottom: 16px;
+        height: 100px;
+        width: 90%;
+        margin: 10px auto;
+        border-radius: 18px;
+    }
+    
+    .service p {
+        font-size: 14px;
+        margin-left: 45px;
+    }
+
+    .service.fast {
+        background: url(images/una-fast-banner.png);
+        background-size: cover;
+        background-position: right;
+    }
+    
+    .service.test {
+        background: url(images/una-test-banner.png);
+        background-position: right;
+        background-size: cover;
+    }
+    
+    .service.wallet {
+        background: linear-gradient(to left, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 17%, #008489 50%), url(images/una-wallet-banner.png);
+        background-position: right;
+        background-size: cover;
+    }
+
+    .banner-icon {
+        width: 150px;
+    }
+    
+    .wallet .banner-icon {
+        width: 187.5px;
+    }
+
     #intro {
         margin: 40px 0;
     }
@@ -1292,21 +1302,6 @@ h2.fast {
         margin: 0 30px 50px;
     }
 
-    .una-slider {
-        width: auto;
-        text-align: center;
-    }
-
-    .carousel-control-prev-icon {
-        margin-top: -50px;
-        margin-left: 15px;
-    }
-
-    .carousel-control-next-icon {
-        margin-top: -50px;
-        margin-right: 15px;
-    }
-
     #ats {
         margin: 0 0;
         height: 650px;
@@ -1317,7 +1312,7 @@ h2.fast {
     }
 
     .ats-header {
-        margin: 390px 10px 40px;
+        margin: 80px 10px 40px;
         font-size: 32px;
         line-height: 120%;
         text-align: center;
@@ -1516,7 +1511,7 @@ h2.fast {
     #journey h1 {
         font-size: 24px;
     }
-    
+
     #journey h3 {
         margin: 24px 0 30px;
         font-size: 14px;
@@ -1526,17 +1521,17 @@ h2.fast {
         margin-top: 20px;
         padding: 10px 10px;
     }
-    
+
     .step-img {
         width: 60px;
         margin-right: 10px;
     }
-    
+
     .step h2 {
         font-size: 14px;
         margin-top: 0px;
     }
-    
+
     .step p {
         font-size: 12px;
         margin-top: 0px;
@@ -1781,7 +1776,7 @@ h2.fast {
     }
 
     .ats-header {
-        margin: 300px 10px 40px;
+        margin: 100px 10px 40px;
         font-size: 32px;
         line-height: 120%;
         text-align: center;
@@ -1852,7 +1847,7 @@ h2.fast {
     }
 
     .ats-header {
-        margin-top: 200px;
+        margin-top: 100px;
     }
 }
 
@@ -1862,6 +1857,27 @@ h2.fast {
         height: 730px;
         background-position: right bottom;
         background-size: 450px
+    }
+
+    .service {
+        margin: auto;
+        height: auto;
+        padding: 20px 5% 10px;
+        margin-bottom: 16px;
+        border-radius: 24px;
+    }
+    
+    .service p {
+        font-size: 16px;
+        margin-left: 10%;
+    }
+
+    .banner-icon {
+        width: 32%;
+    }
+    
+    .wallet .banner-icon {
+        width: 40%;
     }
 
     #cross-platform {
@@ -1877,7 +1893,7 @@ h2.fast {
     }
 
     .ats-header {
-        margin-top: 150px;
+        margin-top: 80px;
     }
 
     .footer-link {
@@ -1998,7 +2014,7 @@ h2.fast {
     #journey h1 {
         font-size: 28px;
     }
-    
+
     #journey h3 {
         margin: 28px 0 40px;
         font-size: 18px;
@@ -2012,17 +2028,17 @@ h2.fast {
         margin-top: 24px;
         padding: 20px;
     }
-    
+
     .step-img {
         width: 80px;
         margin-right: 20px;
     }
-    
+
     .step h2 {
         font-size: 20px;
         margin-top: 14px;
     }
-    
+
     .step p {
         font-size: 15px;
         margin-top: 0px;
@@ -2166,7 +2182,7 @@ h2.fast {
     }
 
     #intro {
-        margin: 90px 0;
+        margin: 90px 0 0;
     }
 
     .intro-text {
@@ -2179,17 +2195,19 @@ h2.fast {
     #intro h3 {
         font-size: 36px;
         text-align: left;
-        margin: 0 50px 60px;
+        margin: 0 50px 40px;
     }
 
-    .carousel-control-prev-icon {
-        margin-top: -80px;
-        margin-left: 15px;
+    .service {
+        margin: 0 50px;
+        height: auto;
+        padding: 24px 5% 14px;
+        margin-bottom: 16px;
     }
-
-    .carousel-control-next-icon {
-        margin-top: -80px;
-        margin-right: 15px;
+    
+    .service p {
+        font-size: 18px;
+        margin-left: 10%;
     }
 
     #ats {
@@ -2200,7 +2218,7 @@ h2.fast {
     }
 
     .ats-header {
-        margin: 600px 50px 30px;
+        margin: 400px 50px 30px;
         font-size: 48px;
         text-align: center;
     }
@@ -2380,7 +2398,7 @@ h2.fast {
     #journey h1 {
         font-size: 30px;
     }
-    
+
     #journey h3 {
         margin: 32px 0 60px;
         font-size: 18px;
@@ -2651,17 +2669,24 @@ h2.fast {
     }
 
     #intro h3 {
-        margin: 0 50px 90px;
+        margin: 0 50px 40px;
     }
 
-    .carousel-control-prev-icon {
-        margin-top: -110px;
-        margin-left: 0;
+    .service {
+        margin: 0 50px;
+        height: auto;
+        padding: 30px 5% 20px;
+        margin-bottom: 16px;
     }
-
-    .carousel-control-next-icon {
-        margin-top: -110px;
-        margin-right: 0;
+    
+    .service.wallet {
+        background: linear-gradient(to left, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 17%, #008489 55%), url(images/una-wallet-banner.png);
+        background-position: right;
+    }
+    
+    .service p {
+        font-size: 22px;
+        margin-left: 10%;
     }
 
     #ats {
@@ -2836,7 +2861,7 @@ h2.fast {
     #journey h1 {
         font-size: 32px;
     }
-    
+
     #journey h3 {
         margin: 32px 0 60px;
         font-size: 20px;
@@ -2846,17 +2871,17 @@ h2.fast {
         margin-top: 24px;
         padding: 20px;
     }
-    
+
     .step-img {
         width: 80px;
         margin-right: 20px;
     }
-    
+
     .step h2 {
         font-size: 24px;
         margin-top: 14px;
     }
-    
+
     .step p {
         font-size: 18px;
         margin-top: 0px;
@@ -2996,12 +3021,34 @@ h2.fast {
         margin-right: 180px;
     }
 
+    .service {
+        margin: 0 50px;
+        height: auto;
+        padding: 36px 5% 24px;
+        margin-bottom: 20px;
+    }
+    
+    .service p {
+        font-size: 24px;
+        margin-left: 10%;
+    }
+
+    .service.wallet {
+        background: linear-gradient(to left, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 17%, #008489 45%), url(images/una-wallet-banner.png);
+        background-position: right;
+        background-size: cover;
+    }
+
     #ats {
         margin: -200px 0 0;
         height: 900px;
         background-image: linear-gradient(to top, rgb(255, 255, 255, 0), #ffffff 67%), url(images/puzzle-background.png);
         background-position: bottom;
         background-size: contain;
+    }
+
+    .ats-header {
+        margin: 320px 50px 30px;
     }
 
     #learn-more {
@@ -3128,32 +3175,32 @@ h2.fast {
         padding-top: 110px;
         padding-bottom: 120px;
     }
-    
+
     #journey h1 {
         font-size: 48px;
     }
-    
+
     #journey h3 {
         margin: 24px 0 75px;
         font-size: 24px;
     }
-    
+
     .step {
         margin-top: 36px;
         padding: 30px;
     }
-    
+
     .step-img {
         width: 120px;
         margin-right: 30px;
         padding: 0;
     }
-    
+
     .step h2 {
         font-size: 36px;
         margin-top: 25px;
     }
-    
+
     .step p {
         font-size: 18px;
         margin-top: 10px;
