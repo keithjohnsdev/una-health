@@ -573,8 +573,12 @@ nav.transparent button span {
     margin: 0;
 }
 
+.copyright {
+    text-align: center;
+}
+
 .copyright-text {
-    margin-top: 159px;
+    margin-top: 80px;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1375,6 +1379,11 @@ h2.fast {
         background-size: contain;
     }
 
+    .logo-natho {
+        width: 50%;
+        margin-top: 20px;
+    }
+
     .copyright-text {
         margin-top: 50px;
     }
@@ -1784,6 +1793,10 @@ h2.fast {
 
     #learn-more {
         height: 620px;
+    }
+
+    #footer {
+        height: 700px;
     }
 
     #test-hero {
@@ -2750,6 +2763,14 @@ h2.fast {
         text-align: left;
     }
 
+    .logo-natho {
+        width: 40%;
+    }
+
+    #footer {
+        height: 900px;
+    }
+
     .copyright-text {
         margin-top: 80px;
     }
@@ -3079,8 +3100,12 @@ h2.fast {
         margin-top: 80px;
     }
 
+    .copyright {
+        margin-top: 30px;
+    }
+
     .copyright-text {
-        margin-top: 159px;
+        margin-top: 70px;
     }
 
     /* -------------------------- UNA Test Page --------------------------- */
@@ -3289,6 +3314,10 @@ h2.fast {
         margin: 24px 0 0;
         font-size: 22px;
         text-align: left;
+    }
+
+    #footer {
+        height: 1000px;
     }
 
     /* -------------------------- UNA Test Page --------------------------- */
