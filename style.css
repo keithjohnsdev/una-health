@@ -2293,6 +2293,10 @@ h2.fast {
         text-align: left;
     }
 
+    .logo-natho {
+        width: 25%;
+    }
+
     /* -------------------------- UNA Test Page --------------------------- */
 
     #test-hero {
@@ -2768,7 +2772,7 @@ h2.fast {
     }
 
     .logo-natho {
-        width: 25%;
+        width: 15%;
     }
 
     #footer {
