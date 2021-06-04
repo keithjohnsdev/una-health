@@ -737,14 +737,15 @@ nav.transparent button span {
     color: white;
     padding: 15px 0 0px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(180deg, #FF5A5F 0%, #E84C60 100%),
-        linear-gradient(0deg, #E84C60, #E84C60);
+    background: linear-gradient(#2ad2f0, #35a7e9);
     margin-top: 10px;
 }
 
 .coming-soon-text {
     font-size: 16px;
+    font-weight: 900;
     line-height: 100%;
+    padding-top: 1px;
 }
 
 .fast-hero {
